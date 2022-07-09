@@ -1,8 +1,8 @@
-##What is Information Technology (IT) ?##
+## What is Information Technology (IT) ? ##
 <center><img src="https://www.reau.ca/content/images/20210417071742-it.jpg" width=400px alt="Information Technology (IT)"></center>
 In a nutshell, <u>anything related to computing technology is a component of IT</u>.
 
-####IT in Home Computing : some components####
+#### IT in Home Computing : some components ####
 <center><img src="https://www.reau.ca/content/images/20210417071216-home-computing.jpg" width=400px alt="IT in Home Computing"></center>
 *Non-exhaustive list* :
 
@@ -12,7 +12,7 @@ In a nutshell, <u>anything related to computing technology is a component of IT<
  - Smart objects used for home automation (Bulbs, doorbells, thermostats, etc...)
  - Internet Connection and ways to use it (WiFi, cables).
 
-####IT in Professional Computing : some components####
+#### IT in Professional Computing : some components ####
 <center><img src="https://www.reau.ca/content/images/20210417072944-professional-computing.jpg" width=400px alt="IT in Professional Computing"></center>
 *Non-exhaustive list* :
 
@@ -23,7 +23,7 @@ In a nutshell, <u>anything related to computing technology is a component of IT<
  - Websites, applications
  - Public or private customer data
 
-##What about IT security in Professional Computing ?##
+## What about IT security in Professional Computing ? ##
 <center><img src="https://www.reau.ca/content/images/20210417074128-security.jpg" width=400px alt="What about IT security in Professional Computing ?"></center>
 
 IT security is the way to **protect IT components <u>from every kind of threat</u>** :
@@ -31,13 +31,13 @@ IT security is the way to **protect IT components <u>from every kind of threat</
  - It has to be considered as **a long-term insurance**, 
  - It must cover **physical infrastructure <u>as much as</u> logical infrastructure**.
 
-####IT Network : the key component to secure ?####
+#### IT Network : the key component to secure ? ####
 <center><img src="https://www.reau.ca/content/images/20210418080200-it-network.png" width=400px alt="IT Network : the key component to secure ?"></center>
 With a strong predominance of Internet-related uses, **network infrastructure must be considered the <u>backbone of computer technology</u>.**
 
 In addition to **strong reliability** requirements, more and more abilities were added to network architectures the time passing by, such as **<u>content inspection/protection layers against cyberthreats</u>.**
 
-## Everyone must be concerned about IT Network security. Why ? How ?##
+##  Everyone must be concerned about IT Network security. Why ? How ? ##
 <center><img src="https://www.reau.ca/content/images/20210418083036-everybody.jpg" width=400px alt="Everyone must be concerned about IT Network security. Why ? How ?"></center>
 From the decision makers to the operations technicians, passing by IT Network architects, everyone should be aware of the importance of securing IT Network.
 
@@ -53,7 +53,7 @@ As mentioned upper regarding a more global scope, **IT Network Security in Profe
   - In some cases, [99.99% SLA](https://uptime.is/four-nines) and 24/7 support is a must-have,
   - **<u>higher the security requirements are, higher the recurring costs will be.</u>**
 
-## Call to discussion !##
+##  Call to discussion ! ##
 As you can see, this article reflects solely my opinion on this subject, and needs more external material.
 
 So **don't hesitate to follow my [LinkedIn Feed](https://www.linkedin.com/in/greau/detail/recent-activity/) and <u>react to that article with your own thoughs and words</u>** !

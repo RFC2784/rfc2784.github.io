@@ -2,7 +2,7 @@
 layout: post
 title:  "Problem solving mantra"
 date:   2022-03-16 11:10:00 -0500
-category: Work Tips
+category: Work-Tips
 tags:
   - first blog
   - mantra

@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "Problem solving mantra"
+date:   2022-03-16 11:10:00 -0500
+category: Work Tips
+tags:
+  - first blog
+  - mantra
+  - motivational  
+---
 ## Life is succession of challenges... ##
 #### ... that we face on a daily basis : ####
 

@@ -35,6 +35,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+feed:
+  categories:
+    - Work Tips
+    - IT Network
+
 minima:
   date_format: "%b %-d, %Y"
 

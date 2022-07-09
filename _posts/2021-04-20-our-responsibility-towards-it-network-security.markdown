@@ -1,3 +1,14 @@
+---
+layout: post
+title:  "Problem solving mantra"
+date:   2022-04-20 13:00:00 -0500
+category: IT Network
+tags:
+  - IT Network Security
+  - Security
+  - Network
+  - IT
+---
 ## What is Information Technology (IT) ? ##
 <center><img src="https://www.reau.ca/content/images/20210417071742-it.jpg" width=400px alt="Information Technology (IT)"></center>
 

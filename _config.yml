@@ -25,10 +25,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Geoffray REAU, working since more than 15 years in IT field, is currently a confirmed Senior IT Network Consultant.
   From Design to Implementation and beyond, his main objective is to provide the most relevant solutions to the IT challenges he is presented with.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rfc2784.github,io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.reau.ca" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tiog
 github_username:  RFC2784
 linkedin_username: greau
+google_analytics: G-625TCRJR1K
 
 show_excerpts: true # set to true to show excerpts on the homepage
 

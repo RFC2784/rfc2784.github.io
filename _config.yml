@@ -40,8 +40,10 @@ plugins:
 
 feed:
   categories:
-    - Work-Tips
-    - IT-Network
+    - Work Tips
+    - IT Network
+
+permalink: /:year/:month/:day/:title:output_ext
 
 minima:
   date_format: "%b %-d, %Y"

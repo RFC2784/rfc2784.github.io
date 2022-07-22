@@ -29,7 +29,12 @@ Among all lessons learned as a problem solver, then as a network solutions desig
 
 ## Good example : my findings about Interac platform Internet transit connectivity ##
 
-Such an organization run its proper Internet Autonomous System to manage public IPv4 prefixes (AS399405 held under ARIN). So it's quite easy to retrieve some useful info regarding the rcorresponding route objects and peering partners.
+Such an organization run its proper Internet Autonomous System to manage public IPv4 prefixes (AS399405 held under ARIN). So it's quite easy to retrieve some useful info regarding the corresponding route objects and peering partners :
+
+<center><img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"><br>  
+*Source : https://bgp.he.net/AS399405#_asinfo* </center>
+
+- Interesting to note that they consider to have more than one Internet Transit provider post-COVID19 lockdown periods :)
 
 ## Bad example : my assumptions about the remaining items of Interac platform network solution desigm ##
 ## Possible remediation plan by applying diversity principle on such context ##

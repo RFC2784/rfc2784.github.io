@@ -24,6 +24,12 @@ Among all lessons learned as a problem solver, then as a network solutions desig
 
 
 # Diversity principle by the exemple : Interac network connectivity #
+
+*As stated earlier, Interac payment platform was impacted by what I will call from now the "Rogers Outage". It was already well known that Interac have chosen Rogers as its main service provider for its operation systems main hosting facilities and network connectivity supplier. So let's review together how this company applied the diversity principle onto its network design !*
+
 ## Good example : my findings about Interac platform Internet transit connectivity ##
+
+Such an organization run its proper Internet Autonomous System to manage public IPv4 prefixes (AS399405 held under ARIN). So it's quite easy to retrieve some useful info regarding the rcorresponding route objects and peering partners.
+
 ## Bad example : my assumptions about the remaining items of Interac platform network solution desigm ##
 ## Possible remediation plan by applying diversity principle on such context ##

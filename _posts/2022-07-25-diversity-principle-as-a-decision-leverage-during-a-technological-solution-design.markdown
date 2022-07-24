@@ -36,22 +36,23 @@ Such an organization run its proper Internet Autonomous System to manage public 
 <center><img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"><b><i>Source : https://bgp.he.net/AS399405#_asinfo</b></i></center><br><br>
 
 - For sure, we can conclude that the diversity principle is correctly applied, as BGP peering is established with two different ISP for Internet transit :
-  - Rogers Communications ,
+  - Rogers Communications,
   - Beanfield Technologies.
 - Route annoucement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that everything was fine from Beanfield peering :
 
 <center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot">
 <span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source : https://twitter.com/mattools/status/1545440711981645826</span></center><br>
-
+Each of our platforms, both Interac Debit and Interac e-Transfer, have redundant networks, including circuit diversity. These networks include 24/7 availability commitments from our suppliers, however the events of July 8th clearly revealed that these commitments could not be fulfilled. These redundant networks with circuit diversity should not have been so vulnerable to the Rogers core maintenance activity.
 - Interesting to note that Interac consider to have more than one Internet Transit provider post-COVID19 lockdown periods :)
 
 ## Bad example : my assumptions about the initial version of Interac platform network interconnectivity design ##
 
 As stated by Rogers in its [response to the Request For Infomation from the Canadian Radio-television and Telecommunications Commission regarding the Rogers Outage](https://crtc.gc.ca/public/otf/2022/c12_202203868/4215445.docx) :
 - "A specific coding was introduced in our Distribution Routers which triggered the failure of the Rogers IP core network" during a planned change.
+- "The configuration change deleted a routing filter and allowed for all possible routes to the Internet to pass through the routers. As a result, the routers immediately began propagating abnormally high volumes of routes throughout the core network. Certain network routing equipment became flooded, exceeded their capacity levels and were then unable to route traffic, causing the common core network to stop processing traffic."
 - "Since the outage was to Rogers’ core network, all of Rogers’ services by all our brands [...] were impacted."
 
-As mentionned above on this post, we know for sure that Internet Transit connectivity to Interac operational systems was still active through an alternate ISP despite the Rogers Outage.
+As mentionned above on this post, we know for sure that Internet Transit connectivity setup for Interac operational systems was still active through an alternate ISP despite the Rogers Outage.
 <ins>So how can it be possible that a global Rogers outage still results to Interac payment unavailability</ins> ?
 
 A possible explanation can be that the **private network interconnectivity between the different hosting locations for Interac operational systems was relying solely on Rogers Communication backbone**, as illustrated on the following diagram :
@@ -60,5 +61,16 @@ A possible explanation can be that the **private network interconnectivity betwe
 
 - Note that a full meshed private network based on Ethernet point-to-point connectivity can rely on a Service Provider backbone. In such case, the Service Provider propose the layer 2 connectivity across layer 3 in the middle, such Ethernet-over-MPLS.
 - In that case, it could be possible that the Internet-facing part of a critical application is hosted on one site, but depends on back-end private services hosted on another location. By breaking the inter-location private connectivity, the application hence becomes unavailable...
+- This scenario was kind of confirmed on [Interac Statement on Rogers Outage](https://www.interac.ca/en/content/news/interac-statement-on-rogers-outage/) :
 
-## Possible remediation plan by applying diversity principle on such context ##
+   *"Each of our platforms, both Interac Debit and Interac e-Transfer, have redundant networks, including circuit diversity. These networks include 24/7 availability commitments from our suppliers, however the events of July 8th clearly revealed that these commitments could not be fulfilled. These redundant networks with circuit diversity should not have been so vulnerable to the Rogers core maintenance activity."*
+   
+**As a summary**
+- Rogers provided the private network connectivity between Interac Operation systems locations, and were committed to provide redundacy by providing diversity between some private circuits. They certainly fullfilled this commitment by the garanty to diverse the physical path of two or more Ethernet-Over-MPLS circuits.
+- Even if the circuits were not relying on the same Rogers Point of Presence, these latter are relying to the Rogers common core network to deliver the service.
+- We can easily imagine that the PoP routers, by waterfall effect, were also surged by the massive route announcements that lead to Rogers core network outage, hence leading to Interac services interruption.
+
+## Remediation plan by applying diversity principle ##
+Still on the official statement mentionned above, Interac was remmediating this wekest link by "adding supplier diversity to strengthen our existing network redundancy", and by continuing "to work with our existing suppliers to strengthen commitments".
+
+

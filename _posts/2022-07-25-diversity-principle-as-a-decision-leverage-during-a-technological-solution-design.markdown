@@ -38,12 +38,27 @@ Such an organization run its proper Internet Autonomous System to manage public 
 - For sure, we can conclude that the diversity principle is correctly applied, as BGP peering is established with two different ISP for Internet transit :
   - Rogers Communications ,
   - Beanfield Technologies.
-- Route annoucement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that everything was fine form Beanfield peering :
+- Route annoucement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that everything was fine from Beanfield peering :
 
 <center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot">
 <span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source : https://twitter.com/mattools/status/1545440711981645826</span></center><br>
 
 - Interesting to note that Interac consider to have more than one Internet Transit provider post-COVID19 lockdown periods :)
 
-## Bad example : my assumptions about the remaining items of Interac platform network solution design ##
+## Bad example : my assumptions about the initial version of Interac platform network interconnectivity design ##
+
+As stated by Rogers in its [response to the Request For Infomation from the Canadian Radio-television and Telecommunications Commission regarding the Rogers Outage](https://crtc.gc.ca/public/otf/2022/c12_202203868/4215445.docx) :
+- "A specific coding was introduced in our Distribution Routers which triggered the failure of the Rogers IP core network" during a planned change.
+- "Since the outage was to Rogers’ core network, all of Rogers’ services by all our brands [...] were impacted."
+
+As mentionned above on this post, we know for sure that Internet Transit connectivity to Interac operational systems was still active through an alternate ISP despite the Rogers Outage.
+<ins>So how can it be possible that a global Rogers outage still results to Interac payment unavailability</ins> ?
+
+A possible explanation can be that the **private network interconnectivity between the different hosting locations for Interac operational systems was relying solely on Rogers Communication backbone**, as illustrated on the following diagram :
+
+![Interac Network Interconnectivity Logical diagram accroding to assumptions](/content/images/interac-logical.png)
+
+- Note that a full meshed private network based on Ethernet point-to-point connectivity can rely on a Service Provider backbone. In such case, the Service Provider propose the layer 2 connectivity across layer 3 in the middle, such Ethernet-over-MPLS.
+- In that case, it could be possible that the Internet-facing part of a critical application is hosted on one site, but depends on back-end private services hosted on another location. By breaking the inter-location private connectivity, the application hence becomes unavailable...
+
 ## Possible remediation plan by applying diversity principle on such context ##

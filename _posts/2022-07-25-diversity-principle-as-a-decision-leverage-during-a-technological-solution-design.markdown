@@ -13,21 +13,25 @@ tags:
 <i><b>Disclaimer:</b> This post contains mainly high level concepts and reference information for a better understanding of the largest audience. It does not go into detail about the technical topics covered.</i>
 
 # Why talking about diversity in such context ? #
-If you live in Canada, or aware of IT newsfeeds, you certainly heard about the major outage Rogers Communications faced on early July 2022.
+If you live in Canada, or you aare aware of IT newsfeeds, you certainly heard about the major outage Rogers Communications faced July 8, 2022.
 At the early stages of this event, I was puzzle that such outage led to service interruption for critical application such Interac payment platform or a bunch of Canadian government services web portals.
 
 To be honest, I can't imagine that related decision makers did not apply fully the diversity principle at the stage of solution designs.
 
 # What do I mean about diversity principle ? #
-Among all lessons learned as a problem solver, then as a network solutions designer, one of the most significant is **not to underestimate the importance to apply diversity as a balance factor between redundancy and security on an technological solution design** :
+Among all lessons learned as a problem solver, then as a network solutions designer, one of the most significant is **not to underestimate the importance to apply diversity as a key factor for redundancy and security on an technological solution design** :
 
 - The more bigger the underlying business organization is, the most diverse the solution must be,
 - It must prevail in each decision taken to ideate and initiate an integration project.
-
+- It can apply on several use case, such :
+  - Several vendors for the same device type used on different scopes,
+  - Several providers for the same kind of service that needs to be redundant,
+  - Several paths to route a critical application flow,
+  - Etc...
 
 # Diversity principle by the exemple : Interac network connectivity #
 
-*As stated earlier, Interac payment platform was impacted by what I will call from now the "Rogers Outage". It was already well known that Interac have chosen Rogers as its main service provider for its operation systems main hosting facilities and network connectivity supplier. So let's review together how this company applied the diversity principle onto its network design !*
+*As stated earlier, Interac payment platform was impacted by what I will call from now the "Rogers Outage". It was already well known that Interac have chosen Rogers as its main service provider for its operation systems main hosting facilities and network connectivity supplier. So let's review together how this company applies the diversity principle onto its network design !*
 
 ## Good example : my findings about Interac platform Internet transit connectivity ##
 
@@ -42,7 +46,7 @@ Such an organization run its proper Internet Autonomous System to manage public 
 
 <center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot">
 <span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source : https://twitter.com/mattools/status/1545440711981645826</span></center><br>
-Each of our platforms, both Interac Debit and Interac e-Transfer, have redundant networks, including circuit diversity. These networks include 24/7 availability commitments from our suppliers, however the events of July 8th clearly revealed that these commitments could not be fulfilled. These redundant networks with circuit diversity should not have been so vulnerable to the Rogers core maintenance activity.
+
 - Interesting to note that Interac consider to have more than one Internet Transit provider post-COVID19 lockdown periods :)
 
 ## Bad example : my assumptions about the initial version of Interac platform network interconnectivity design ##
@@ -52,7 +56,7 @@ As stated by Rogers in its [response to the Request For Infomation from the Cana
 - "The configuration change deleted a routing filter and allowed for all possible routes to the Internet to pass through the routers. As a result, the routers immediately began propagating abnormally high volumes of routes throughout the core network. Certain network routing equipment became flooded, exceeded their capacity levels and were then unable to route traffic, causing the common core network to stop processing traffic."
 - "Since the outage was to Rogers’ core network, all of Rogers’ services by all our brands [...] were impacted."
 
-As mentionned above on this post, we know for sure that Internet Transit connectivity setup for Interac operational systems was still active through an alternate ISP despite the Rogers Outage.
+As mentioned earlier, we know for sure that Internet Transit connectivity setup for Interac operational systems was probably still active through an alternate ISP despite the Rogers Outage.
 <ins>So how can it be possible that a global Rogers outage still results to Interac payment unavailability</ins> ?
 
 A possible explanation can be that the **private network interconnectivity between the different hosting locations for Interac operational systems was relying solely on Rogers Communication backbone**, as illustrated on the following diagram :
@@ -70,7 +74,5 @@ A possible explanation can be that the **private network interconnectivity betwe
 - Even if the circuits were not relying on the same Rogers Point of Presence, these latter are relying to the Rogers common core network to deliver the service.
 - We can easily imagine that the PoP routers, by waterfall effect, were also surged by the massive route announcements that lead to Rogers core network outage, hence leading to Interac services interruption.
 
-## Remediation plan by applying diversity principle ##
+## Remediation plan : apply diversity principle for improvements ##
 Still on the official statement mentionned above, Interac was remmediating this wekest link by "adding supplier diversity to strengthen our existing network redundancy", and by continuing "to work with our existing suppliers to strengthen commitments".
-
-

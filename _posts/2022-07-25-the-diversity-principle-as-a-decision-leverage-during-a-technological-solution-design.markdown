@@ -12,44 +12,44 @@ tags:
 ---
 <i><b>Disclaimer:</b> This post contains mainly high-level concepts and reference information for a better understanding of the largest audience. It does not go into details about the technical topics covered.</i>
 
-# Why talking about diversity in such context ? #
+# Why talk about diversity in such context? #
 If you live in Canada, or you are aware of IT newsfeeds, you certainly heard about the major outage Rogers Communications faced July 8, 2022.
-At the early stages of this event, I was puzzle that such outage led to service interruption for critical application such Interac payment platform or a bunch of Canadian government services web portals.
+At the early stages of this event, I was puzzled that such an outage led to service interruption for critical applications such Interac payment platform or a bunch of Canadian government services web portals.
 
-To be honest, I can't imagine that related decision makers did not apply fully the diversity principle at the stage of solution designs.
+To be honest, I can't imagine that related decision-makers did not apply fully the diversity principle at the stage of solution design.
 
-# What do I mean about the diversity principle ? #
-Among all lessons learned as a problem solver, then as a network solutions designer, one of the most significant is **not to underestimate the importance to apply diversity as a key factor for redundancy and security on an technological solution design** :
+# What do I mean about the diversity principle? #
+Among all lessons learned as a problem solver, then as a network solutions designer, one of the most significant is **not to underestimate the importance to apply diversity as a key factor for redundancy and security on a technological solution design** :
 
-- The more bigger the underlying business organization is, the most diverse the solution must be,
+- The bigger the underlying business organization is, the most diverse the solution must be,
 - It must prevail in each decision taken to ideate and initiate an integration project.
-- It can apply on several use cases, such :
+- It can apply to several use cases, such :
   - Several vendors for the same device type used on different scopes,
-  - Several providers for the same kind of service that needs to be redundant,
+  - Several providers for the same kind of service needs to be redundant,
   - Several paths to route a critical application flow,
   - Etc...
 
-# The diversity principle by example : Interac network connectivity #
+# The diversity principle by example: Interac network connectivity #
 
 *As stated earlier, Interac payment platform was impacted by what I will call from now the "Rogers Outage". It's already well known that Interac have chosen Rogers as its main service provider for its operation systems' network connectivity. So let's review together how this company applies the diversity principle onto its network design !*
 
 ## Good example : my findings about Interac platform Internet transit connectivity ##
 
-Such an organization run its proper Internet Autonomous System to manage public IPv4 prefixes (AS399405 held under ARIN). So it's quite easy to retrieve some useful info regarding the corresponding route objects and peering partners :
+Such an organization runs its proper Internet Autonomous System to manage public IPv4 prefixes (AS399405 held under ARIN). So it's quite easy to retrieve some useful info regarding the corresponding route objects and peering partners :
 
-<center><img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"><b><i>Source : https://bgp.he.net/AS399405#_asinfo</b></i></center><br><br>
+<center><img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"><b><i>Source: https://bgp.he.net/AS399405#_asinfo</b></i></center><br><br>
 
 - For sure, we can conclude that <ins>the diversity principle is correctly applied at Internet transit level</ins>, as <ins>BGP peering is established with two different ISPs</ins> :
   - Rogers Communications (AS812),
   - Beanfield Technologies (AS2199).
-- Route annoucement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that **everything was fine from Beanfield peering** :
+- Route announcement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that **everything was fine from Beanfield peering** :
 
 <center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot">
-<span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source : https://twitter.com/mattools/status/1545440711981645826</span></center><br>
+<span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source: https://twitter.com/mattools/status/1545440711981645826</span></center><br>
 
-- *Interesting to note that Interac considered to have more than one Internet Transit provider post-COVID19 lockdowns periods :)*
+- *Interesting to note that Interac considered having more than one Internet Transit provider post-COVID19 lockdowns periods :)*
 
-## Bad example : my assumptions about the initial version of Interac platform network interconnectivity design ##
+## Bad example: my assumptions about the initial version of Interac platform network interconnectivity design ##
 
 As stated by Rogers in its [response to the Request For Information from the Canadian Radio-television and Telecommunications Commission regarding the Rogers Outage](https://crtc.gc.ca/public/otf/2022/c12_202203868/4215445.docx) :
 - "A specific coding was introduced in our Distribution Routers which triggered the failure of the Rogers IP core network" during a planned change.
@@ -57,14 +57,16 @@ As stated by Rogers in its [response to the Request For Information from the Can
 - "Since the outage was to Rogers’ core network, **all of Rogers’ services by all our brands [...] were impacted**."
 
 As mentioned earlier, we know for sure that Internet Transit connectivity setup for Interac operational systems was probably still active through an alternate ISP despite the Rogers Outage.
-<ins>So how can it be possible that a global Rogers outage still results to Interac payment unavailability</ins> ?
+<ins>So how can it be possible that a global Rogers outage still results in Interac payment unavailability</ins>?
 
-A possible explanation can be that the **private network interconnectivity between the different hosting locations for Interac operational systems was relying solely on Rogers Communication backbone**, as illustrated on the following diagram (based on my assumptions) :
+A possible explanation can be that the **private network interconnectivity between the different hosting locations for Interac operational systems was relying solely on Rogers Communication backbone**, as illustrated in the following diagram (based on my assumptions) :
 
 ![Interac Network Interconnectivity Logical diagram based on Geoffray REAU's assumptions](/content/images/interac-logical.png)
 
-- Note that a full meshed private network based on Ethernet point-to-point connectivity can rely on a Service Provider's backbone. In such case, the Service Provider propose the layer 2 connectivity across layer 3 in the middle, such Ethernet-over-MPLS.
-- Among several possible cases, the Internet-facing component of a business-critical application might be hosted at one site, but relies on back-end's private services hosted at another hosting facility. By breaking the inter-sites' private connectivity, the application hence becomes unavailable...
+- Note that a full meshed private network based on Ethernet point-to-point connectivity can rely on a Service Provider's backbone. In such figure, the Service Provider proposes the layer 2 connectivity across layer 3 in the middle, such Ethernet-over-MPLS.
+- Among several scenario, a plausible one invovles the Internet-facing component of a business-critical application:
+  - it might be hosted at one site, but relies on back-end's private services hosted at another hosting facility.
+  - By breaking the inter-sites' private connectivity, the application hence becomes unavailable...
 - <ins>This scenario was kind of confirmed on </ins>[Interac Statement on Rogers Outage](https://www.interac.ca/en/content/news/interac-statement-on-rogers-outage/) :
 
    *"Each of our platforms, both Interac Debit and Interac e-Transfer, have <ins>redundant networks, <b>including circuit diversity</b></ins>. These networks include 24/7 availability commitments from our suppliers, however <ins>the events of July 8th clearly revealed that these commitments could not be fulfilled. <b>These redundant networks with circuit diversity should not have been so vulnerable to the Rogers core maintenance activity</b></ins>."*

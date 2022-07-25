@@ -37,15 +37,16 @@ Among all lessons learned as a problem solver, then as a network solutions desig
 
 Such an organization runs its proper Internet Autonomous System to manage public IPv4 prefixes (AS399405 held under ARIN). So it's quite easy to retrieve some useful info regarding the corresponding route objects and peering partners :
 
-<center><img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"><b><i>Source: https://bgp.he.net/AS399405#_asinfo</b></i></center><br><br>
+<img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"></center>
+<center><b><i>Source: <a href="https://bgp.he.net/AS399405#_asinfo" target="_blank">https://bgp.he.net/AS399405#_asinfo</a></b></i><center><br><br>
 
 - For sure, we can conclude that <ins>the diversity principle is correctly applied at Internet transit level</ins>, as <ins>BGP peering is established with two different ISPs</ins> :
   - Rogers Communications (AS812),
   - Beanfield Technologies (AS2199).
 - Route announcement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that **everything was fine from Beanfield peering** :
 
-<center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot">
-<span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source: https://twitter.com/mattools/status/1545440711981645826</span></center><br>
+<center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot"></center>
+<center><b><i>Source:  <a href="https://twitter.com/mattools/status/1545440711981645826" target="_blank">https://twitter.com/mattools/status/1545440711981645826</a></b></i><center><br><br>
 
 - *Interesting to note that Interac considered having more than one Internet Transit provider post-COVID19 lockdowns periods :)*
 

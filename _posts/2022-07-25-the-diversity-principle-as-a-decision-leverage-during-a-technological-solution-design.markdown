@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The diversity principle as a decision leverage during a technological solution design"
-date:   2022-07-25 13:15:00 -0500
+date:   2022-07-25 14:00:00 -0400
 categories:
   - IT Network
   - Network Design

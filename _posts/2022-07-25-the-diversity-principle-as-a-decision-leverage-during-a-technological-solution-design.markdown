@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The diversity principle as a decision leverage during a technological solution design"
-date:   2022-07-25 12:00:00 -0500
+date:   2022-07-25 13:15:00 -0500
 categories:
   - IT Network
   - Network Design
@@ -10,7 +10,7 @@ tags:
   - Network
   - Design  
 ---
-<i><b>Disclaimer:</b> This post contains mainly high-level concepts and reference information for a better understanding of the largest audience. It does not go into details about the technical topics covered.</i>
+***Disclaimer:** This post contains mainly high-level concepts and reference information for a better understanding of the largest audience. It does not go into details about the technical topics covered.*
 
 # Why talk about diversity in such context? #
 If you live in Canada, or you are aware of IT newsfeeds, you certainly heard about the major outage Rogers Communications faced July 8, 2022.
@@ -73,12 +73,17 @@ A possible explanation can be that the **private network interconnectivity betwe
    
 **Facts and assumptions - Overview**
 - Rogers Communications provided the private network connectivity between Interac's operational system sites and committed to providing redundancy by ensuring diversity between some private circuits. This service provider probably met this commitment by providing physical path diversity across two or more Ethernet-Over-MPLS circuits.
-- Even if the circuits were not relying on the same Rogers' Points of Presence (PoP), these latter are probably relying to the Rogers' common core network to deliver the service.
-- We can easily imagine that the PoP routers, by waterfall effect, were also surged by the massive route announcements that lead to Rogers core network outage, leading to Interac services interruption.
+- Even if the circuits were not relying on the same Rogers' Points of Presence (PoP), these latter are probably relying on Rogers' common core network to deliver the service.
+- We can easily imagine that the PoP routers, by a waterfall effect, were also surged by the massive route announcements that lead to Rogers core network outage, leading to Interac services interruption.
 
-## Remediation plan : apply the priciple of diversity for improvements ##
-Still on the official statement mentioned above, Interac indicated that remediation of this weakest link will be made by "adding supplier diversity to strengthen our existing network redundancy", and by continuing "to work with our existing suppliers to strengthen commitments" :
+## Remediation plan: apply the principle of diversity for improvements ##
+Still according to the official statement mentioned above, Interac indicated that remediation of this weakest link will be made by "adding supplier diversity to strengthen our existing network redundancy", and by continuing "to work with our existing suppliers to strengthen commitments" :
 - We have here a confirmation that the principle of diversity must be applied at every layer of a technological solution design, and **can also be applied during its improvement**.
-- Based on the connectivity suppliers we identified upper (Rogers and Beanfield), assuming that private network connectivity is relying on point-to-point Ethernet-Over-MPLS circuits fully provided by Rogers, a possible network design evolution is to divert one of those point-to-point circuit from Rogers to Beanfield :
+- Based on the connectivity suppliers we identified upper (Rogers and Beanfield), assuming that private network connectivity is relying on point-to-point Ethernet-Over-MPLS circuits fully provided by Rogers, a possible network design evolution is to divert one of those point-to-point circuits from Rogers to Beanfield, as illustrated by the diagram below:
 
 ![Interac Network Interconnectivity evolution Logical diagram based on Geoffray REAU's assumptions](/content/images/interac-logical-evolution.png)
+
+# Call to discussion ! #
+As you can see, this post reflects my own opinions and assumptions about this topic. I'm open to external points of view to elaborate !
+
+So <b>don’t hesitate to reach me on the social medias (links on footer) and <ins>react to that post with your own thoughs and words</ins> !</b>

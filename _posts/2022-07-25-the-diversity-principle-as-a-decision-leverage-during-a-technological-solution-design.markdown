@@ -23,7 +23,7 @@ Among all lessons learned as a problem solver, then as a network solutions desig
 
 - The more bigger the underlying business organization is, the most diverse the solution must be,
 - It must prevail in each decision taken to ideate and initiate an integration project.
-- It can apply on several use case, such :
+- It can apply on several use cases, such :
   - Several vendors for the same device type used on different scopes,
   - Several providers for the same kind of service that needs to be redundant,
   - Several paths to route a critical application flow,
@@ -31,7 +31,7 @@ Among all lessons learned as a problem solver, then as a network solutions desig
 
 # The diversity principle by example : Interac network connectivity #
 
-*As stated earlier, Interac payment platform was impacted by what I will call from now the "Rogers Outage". It's already well known that Interac have chosen Rogers as its main service provider for its operation systems' main network connectivity supplier. So let's review together how this company applies the diversity principle onto its network design !*
+*As stated earlier, Interac payment platform was impacted by what I will call from now the "Rogers Outage". It's already well known that Interac have chosen Rogers as its main service provider for its operation systems' network connectivity. So let's review together how this company applies the diversity principle onto its network design !*
 
 ## Good example : my findings about Interac platform Internet transit connectivity ##
 
@@ -39,22 +39,22 @@ Such an organization run its proper Internet Autonomous System to manage public 
 
 <center><img src="/content/images/AS399405_info_20220722.jpg" width=400px alt="bgp.he.net AS399405 infos"><b><i>Source : https://bgp.he.net/AS399405#_asinfo</b></i></center><br><br>
 
-- For sure, we can conclude that the diversity principle is correctly applied at Internet transit level, as BGP peering is established with two different ISPs :
-  - Rogers Communications,
-  - Beanfield Technologies.
-- Route annoucement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that everything was fine from Beanfield peering :
+- For sure, we can conclude that <ins>the diversity principle is correctly applied at Internet transit level</ins>, as <ins>BGP peering is established with two different ISPs</ins> :
+  - Rogers Communications (AS812),
+  - Beanfield Technologies (AS2199).
+- Route annoucement of the /23 IPv4 prefix owned by Interac captured the day of the Rogers Outage by a Twitter user proves that **everything was fine from Beanfield peering** :
 
 <center><img src="/content/images/bgp-interac-tweet.jpg" width=400px alt="Twitter screenshot">
 <span style="font-size: 8pt; font-weight: bold; font-style: italic;">Source : https://twitter.com/mattools/status/1545440711981645826</span></center><br>
 
-- Interesting to note that Interac considered to have more than one Internet Transit provider post-COVID19 lockdowns periods :)
+- *Interesting to note that Interac considered to have more than one Internet Transit provider post-COVID19 lockdowns periods :)*
 
 ## Bad example : my assumptions about the initial version of Interac platform network interconnectivity design ##
 
 As stated by Rogers in its [response to the Request For Information from the Canadian Radio-television and Telecommunications Commission regarding the Rogers Outage](https://crtc.gc.ca/public/otf/2022/c12_202203868/4215445.docx) :
 - "A specific coding was introduced in our Distribution Routers which triggered the failure of the Rogers IP core network" during a planned change.
-- "The configuration change deleted a routing filter and allowed for all possible routes to the Internet to pass through the routers. As a result, the routers immediately began propagating abnormally high volumes of routes throughout the core network. Certain network routing equipment became flooded, exceeded their capacity levels and were then unable to route traffic, causing the common core network to stop processing traffic."
-- "Since the outage was to Rogers’ core network, all of Rogers’ services by all our brands [...] were impacted."
+- "The configuration change deleted a routing filter and allowed for all possible routes to the Internet to pass through the routers. As a result, the routers immediately began propagating abnormally high volumes of routes throughout the core network. <ins>Certain network routing equipment became flooded, <b>exceeded their capacity levels and were then unable to route traffic</b></ins>, causing the common core network to stop processing traffic."
+- "Since the outage was to Rogers’ core network, **all of Rogers’ services by all our brands [...] were impacted**."
 
 As mentioned earlier, we know for sure that Internet Transit connectivity setup for Interac operational systems was probably still active through an alternate ISP despite the Rogers Outage.
 <ins>So how can it be possible that a global Rogers outage still results to Interac payment unavailability</ins> ?
@@ -65,9 +65,9 @@ A possible explanation can be that the **private network interconnectivity betwe
 
 - Note that a full meshed private network based on Ethernet point-to-point connectivity can rely on a Service Provider's backbone. In such case, the Service Provider propose the layer 2 connectivity across layer 3 in the middle, such Ethernet-over-MPLS.
 - Among several possible cases, the Internet-facing component of a business-critical application might be hosted at one site, but relies on back-end's private services hosted at another hosting facility. By breaking the inter-sites' private connectivity, the application hence becomes unavailable...
-- This scenario was kind of confirmed on [Interac Statement on Rogers Outage](https://www.interac.ca/en/content/news/interac-statement-on-rogers-outage/) :
+- <ins>This scenario was kind of confirmed on </ins>[Interac Statement on Rogers Outage](https://www.interac.ca/en/content/news/interac-statement-on-rogers-outage/) :
 
-   *"Each of our platforms, both Interac Debit and Interac e-Transfer, have redundant networks, including circuit diversity. These networks include 24/7 availability commitments from our suppliers, however the events of July 8th clearly revealed that these commitments could not be fulfilled. These redundant networks with circuit diversity should not have been so vulnerable to the Rogers core maintenance activity."*
+   *"Each of our platforms, both Interac Debit and Interac e-Transfer, have <ins>redundant networks, <b>including circuit diversity</b></ins>. These networks include 24/7 availability commitments from our suppliers, however <ins>the events of July 8th clearly revealed that these commitments could not be fulfilled. <b>These redundant networks with circuit diversity should not have been so vulnerable to the Rogers core maintenance activity</b></ins>."*
    
 **Facts and assumptions - Overview**
 - Rogers Communications provided the private network connectivity between Interac's operational system sites and committed to providing redundancy by ensuring diversity between some private circuits. This service provider probably met this commitment by providing physical path diversity across two or more Ethernet-Over-MPLS circuits.
@@ -76,7 +76,7 @@ A possible explanation can be that the **private network interconnectivity betwe
 
 ## Remediation plan : apply the priciple of diversity for improvements ##
 Still on the official statement mentioned above, Interac indicated that remediation of this weakest link will be made by "adding supplier diversity to strengthen our existing network redundancy", and by continuing "to work with our existing suppliers to strengthen commitments" :
-- We have here a confirmation that the principle of diversity must be applied at every layer of a technological solution design, and can also be applied during its evolution.
+- We have here a confirmation that the principle of diversity must be applied at every layer of a technological solution design, and **can also be applied during its improvement**.
 - Based on the connectivity suppliers we identified upper (Rogers and Beanfield), assuming that private network connectivity is relying on point-to-point Ethernet-Over-MPLS circuits fully provided by Rogers, a possible network design evolution is to divert one of those point-to-point circuit from Rogers to Beanfield :
 
 ![Interac Network Interconnectivity evolution Logical diagram based on Geoffray REAU's assumptions](/content/images/interac-logical-evolution.png)

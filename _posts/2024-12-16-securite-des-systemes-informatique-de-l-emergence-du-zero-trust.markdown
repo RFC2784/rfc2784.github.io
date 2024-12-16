@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sécurité des systèmes informatiques : de l’émergence du Zero Trust"
-date:   2024-12-16 11:30:00 -0400
+date:   2024-12-16 11:45:00 -0400
 categories:
   - IT Network
   - Network Design

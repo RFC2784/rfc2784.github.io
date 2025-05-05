@@ -77,40 +77,33 @@ Dans son article [“Agentic AI in Telecom Industry | The Ultimate Guide“](htt
 L'IA agentique peut optimiser les processus internes tels que la facturation, l'allocation des ressources et la conformité. Les agents automatisent les tâches répétitives, comme la détection des défauts, la billetterie, la validation de la facturation et le réglage du réseau, ce qui réduit les dépenses de main-d'œuvre et de maintenance. Ils peuvent gérer la chaîne d'approvisionnement, optimiser les stocks, prévoir la demande et anticiper les besoins logistiques. La collaboration entre plusieurs agents à travers différents domaines des télécommunications (support client, gestion de réseau, facturation, etc.) permet une automatisation de bout en bout.
 
 ### Exemples concrets ###
-- FedEx travaille avec Accenture et NVIDIA pour explorer l'utilisation de Trusted Agent Huddle afin de renforcer la résilience de la chaîne d'approvisionnement<sup>[5]</sup>. Trusted Agent Huddle permet la collaboration sécurisée et transparente entre agents de différents partenaires. L'architecture agentique aide à orchestrer et automatiser des workflows commerciaux complexes, améliorant la productivité et l'efficacité opérationnelle globale.
-- AT&T utilise un chatbot interne basé sur l'IA, Ask AT&T<sup>[6]</sup>, pour diverses applications, notamment l'analyse financière, la gestion de la chaîne d'approvisionnement et l'analyse du trafic en magasin, ce qui a permis de réduire le temps de codage et de service client.
-- Accenture déploie des agents autonomes dans sa fonction marketing pour créer et gérer des campagnes plus rapidement, réduisant les étapes manuelles et augmentant la vitesse de mise sur le marché<sup>[7]</sup>.
-- Accenture et BMW ont collaboré sur un système multi-agents utilisant l'IA générative pour prendre des décisions, améliorant la productivité et l'expérience employé, notamment en choisissant la bonne source de données pour les questions des vendeurs<sup>[8]</sup>.
-- Red Hat liste la gestion de la chaîne d'approvisionnement et les opérations informatiques comme des cas d'utilisation pertinents pour l'IA agentique<sup>[9]</sup>.
+- En mars 2023, AT&T annonce un partenariat avec NVIDIA pour la mise en place de nouvelles capacités construites autour de l'intelligence artificielle, notamment pour optimiser la répartition des agents de terrain en utilisant NVIDIA cutOpt<sup>[5]</sup>. Les tous premiers tests attestent à l'époque d'une augmentation du nombres d'opérations de terrain ainsi qu'une réduction de 90% des coûts infonuagiques associés.
+- Toujours en relation avec les opérations de terrain, Orange utilise des fonctionalités de reconnaissance d'image par intelligence artificielle pour valider la qualité des travaux effectués, permettant le cas échéant des actions correctrices immédiates<sup>[6]</sup>. 
 
-<sup>[5]</sup> [Accenture Introduces Trusted Agent Huddle to Allow Seamless, First-of-its-Kind Multi-System AI Agent Collaboration Across the Enterprise](https://newsroom.accenture.com/news/2025/accenture-introduces-trusted-agent-huddle-to-allow-seamless-first-of-its-kind-multi-system-ai-agent-collaboration-across-the-enterprise)
+<sup>[5]</sup> [AT&T Press Room | AT&T Supercharges Operations With NVIDIA AI](https://nvidianews.nvidia.com/news/at-t-supercharges-operations-with-nvidia-ai)
 
-<sup>[6]</sup> [AT&T Blog | Ask AT&T](https://about.att.com/blogs/2023/generative-ai.html)
-
-<sup>[7][8]</sup> [Accenture | Harnessing the Power of AI Agents](https://www.accenture.com/ca-en/insights/data-ai/hive-mind-harnessing-power-ai-agents)
-
-<sup>[9]</sup> [Red Hat | L'IA agentique, qu'est-ce que c'est ?](https://www.redhat.com/fr/topics/ai/what-is-agentic-ai)
+<sup>[6]</sup> [Orange | L'IA, moteur d'innovation dans les réseaux télécoms d'Orange](https://www.orange.com/fr/groupe/linnovation-utile-et-source-de-progres-pour-tous/lia-moteur-dinnovation-dans-les-reseaux)
 ## Applications d'informatique de pointe (Edge Computing) ##
 <center><img src="/content/images/conv_edge_computing_ia.jpg" alt="Convergence de l'IA et de l'Edge Computing"></center>
 Les agents d'IA peuvent supporter des charges de travail informatiques intensives sur des réseaux privés en périphérie (edge), combinant des réseaux privés 5G sécurisés à faible latence avec des plateformes logicielles d'IA pour permettre des services d'IA en temps réel sur site.
 
 ### Exemple concret ###
-Verizon s'est associé à Nvidia pour supercharger les charges de travail d'IA sur les réseaux privés 5G couplés à l'informatique de pointe mobile<sup>[10]</sup>. Cela prend en charge des applications exigeantes en calcul, telles que les modèles d'IA générative, la vision par ordinateur et la réalité augmentée. Les applications sont variées, incluant:
+Verizon s'est associé à Nvidia pour supercharger les charges de travail d'IA sur les réseaux privés 5G couplés à l'informatique de pointe mobile<sup>[7]</sup>. Cela prend en charge des applications exigeantes en calcul, telles que les modèles d'IA générative, la vision par ordinateur et la réalité augmentée. Les applications sont variées, incluant:
 - le jumeau numérique,
 - l'automatisation manufacturière,
 - l'analyse du trafic en magasin,
 - la gestion de la chaîne d'approvisionnement (réapprovisionnement intelligent, transport et logistique).
 
-<sup>[10]</sup>[Verizon collaborates with NVIDIA to power AI workloads on 5G private networks with Mobile Edge Compute](https://www.verizon.com/about/news/verizon-nvidia-power-ai-workloads-5g-private-networks-mec)
+<sup>[7]</sup>[Verizon collaborates with NVIDIA to power AI workloads on 5G private networks with Mobile Edge Compute](https://www.verizon.com/about/news/verizon-nvidia-power-ai-workloads-5g-private-networks-mec)
 
 ## Marketing personnalisé ##
 <center><img src="/content/images/mktng_perso_ia.jpg" alt="Marketing Personnalisé Optimisé par l'IA"></center>
 L'IA agentique peut analyser les données clients et prédire les offres les plus pertinentes. Elle adapte les recommandations en utilisant des informations en temps réel sur l'activité des clients et l'utilisation des services.
 
 ### Exemple concret ###
-- T-Mobile utilise l'IA basée sur le comportement utilisateur en temps réel pour personnaliser les offres<sup>[11]</sup>. Les agents de vente IA peuvent identifier les clients susceptibles de passer à des forfaits supérieurs ou de renouveler leurs contrats.
+- T-Mobile utilise l'IA basée sur le comportement utilisateur en temps réel pour personnaliser les offres<sup>[8]</sup>. Les agents de vente IA peuvent identifier les clients susceptibles de passer à des forfaits supérieurs ou de renouveler leurs contrats.
 
-<sup>[11]</sup> [AWS | At T-Mobile, AI Humanizes Customer ServiceAt T-Mobile, AI Humanizes Customer Service](https://aws.amazon.com/machine-learning/customers/innovators/t_mobile/)
+<sup>[8]</sup> [AWS | At T-Mobile, AI Humanizes Customer ServiceAt T-Mobile, AI Humanizes Customer Service](https://aws.amazon.com/machine-learning/customers/innovators/t_mobile/)
 ## Analyse et reporting ##
 <center><img src="/content/images/analyse_report_ia.jpg" alt="Cycle d'Analyse et de Reporting"></center>
 Les agents peuvent consolider les données provenant de diverses sources et générer des tableaux de bord et des rapports automatisés pour les dirigeants et les équipes, facilitant ainsi la prise de décision basée sur les données. 
@@ -125,8 +118,8 @@ Toujours dans son article [“Agentic AI in Telecom Industry | The Ultimate Guid
 
 Ces applications démontrent comment les agents d'IA vont au-delà du support client pour transformer les opérations des télécommunications en les rendant plus intelligentes, proactives et résilientes.
 
-Les systèmes d'IA agentique fonctionnent en décomposant des tâches complexes en agents spécialisés et en gérant leurs interactions via une couche d'orchestration. Cette approche collaborative, où plusieurs agents travaillent ensemble, est cruciale pour aborder des problèmes complexes qui dépassent les capacités d'un seul agent. L'architecture agentique permet cette collaboration, souvent structurée de manière hiérarchique avec des agents utilitaires, des super agents et des agents orchestrateurs. Les systèmes d'orchestration basés sur des frameworks comme SWARM<sup> [12]</sup> ou les plateformes comme Accenture AI Refinery™<sup> [13]</sup> permettent de gérer ces interactions et d'atteindre des objectifs complexes.
+Les systèmes d'IA agentique fonctionnent en décomposant des tâches complexes en agents spécialisés et en gérant leurs interactions via une couche d'orchestration. Cette approche collaborative, où plusieurs agents travaillent ensemble, est cruciale pour aborder des problèmes complexes qui dépassent les capacités d'un seul agent. L'architecture agentique permet cette collaboration, souvent structurée de manière hiérarchique avec des agents utilitaires, des super agents et des agents orchestrateurs. Les systèmes d'orchestration basés sur des frameworks comme SWARM<sup> [9]</sup> ou les plateformes comme Accenture AI Refinery™<sup> [10]</sup> permettent de gérer ces interactions et d'atteindre des objectifs complexes.
 
-<sup>[12]</sup> [Neurons Lab | Building a Telco AI Agent Orchestration Layer with SWARM](https://neurons-lab.com/article/building-a-telco-ai-agent-orchestration-layer/)
+<sup>[9]</sup> [Neurons Lab | Building a Telco AI Agent Orchestration Layer with SWARM](https://neurons-lab.com/article/building-a-telco-ai-agent-orchestration-layer/)
 
-<sup>[13]</sup> [Accenture | AI Refinery™](https://www.accenture.com/ca-en/services/data-ai/ai-refinery)
+<sup>[10]</sup> [Accenture | AI Refinery™](https://www.accenture.com/ca-en/services/data-ai/ai-refinery)

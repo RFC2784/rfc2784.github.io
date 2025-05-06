@@ -18,16 +18,13 @@ tags:
   - Transformation numérique
   - Digital Transformation 
 ---
-💡Plongez dans un avenir où les infrastructures télécoms deviennent plus intelligentes, résilientes et autonomes !
-
-✒️Cet article explore les applications concrètes de l'IA agentique, avancée technologique majeure, dans le secteur des télécommunications. Conçus pour être autonomes, adaptatifs et orientés vers des objectifs spécifiques, ces agents numériques agissent en temps réel pour optimiser les réseaux, anticiper les défaillances et automatiser les processus complexes, dépassant les simples interactions de support client.
-
-🔍Gestion dynamique du réseau, maintenance prédictive, amélioration continue des services... Découvrez par l'exemple comment des acteurs du secteur comme AT&T, NTT Docomo, Orange et Vodafone, ont su s'approprier cette innovation devenant incontournable!
+💡Plongez dans un avenir où les infrastructures télécoms deviennent plus intelligentes, résilientes et autonomes !<br/>✒️Cet article explore les applications concrètes de l'IA agentique, avancée technologique majeure, dans le secteur des télécommunications. Conçus pour être autonomes, adaptatifs et orientés vers des objectifs spécifiques, ces agents numériques agissent en temps réel pour optimiser les réseaux, anticiper les défaillances et automatiser les processus complexes, dépassant les simples interactions de support client.<br/>🔍Gestion dynamique du réseau, maintenance prédictive, amélioration continue des services... Découvrez par l'exemple comment des acteurs du secteur comme AT&T, NTT Docomo, Orange et Vodafone, ont su s'approprier cette innovation devenant incontournable!
 
 ---
 ***Avant-propos***
 - *Cet article, augmenté d'améliorations générées avec des IA ([Napkin](https://www.napkin.ia) , [Microsoft Copilot](https://copilot.microsoft.com/), [NotebookLM](https://notebooklm.google.com/)), est mis à disposition au travers de la license* <span xmlns:cc="http://creativecommons.org/ns#" ><i><a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></i></span>
 - *Le prochain article sera quant à lui dédié à l'impact de l'emploi d'agents AI sur les professionnels de TI. N'hésitez pas à suivre [mon compte BlueSky](https://bsky.app/profile/tiog.eu.org) ou à souscrire au [fil rss](https://www.reau.ca/feed.xml) pour ne pas rater sa sortie!*
+
 ---
 # Qu’est-ce que c’est l’IA agentique? #
 

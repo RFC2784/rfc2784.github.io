@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "L'IA Agentique : Révolution dans les infrastructures télécoms"
-date:   2025-05-06 17:30:00 -0400
+date:   2025-05-06 17:40:00 -0400
 categories:
   - Artificial Intelligence
   - IT Network
-  - Network Design
   - IT Security
+  - Network Design
 tags:
   - Intelligence Artificielle
   - Artificial Intelligence

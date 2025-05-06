@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "L'IA Agentique : Révolution dans les Télécommunications"
+title:  "L'IA Agentique : Révolution dans les infrastructures télécoms"
 date:   2025-05-06 09:00:00 -0400
 categories:
   - Artificial Intelligence
@@ -8,32 +8,30 @@ categories:
   - Network Design
   - IT Security
 tags:
-  - zerotrust
-  - cybersecurity
-  - cybersécurité
-  - digitalsecurity
-  - sécurité numérique
-  - ransomware
-  - rançongiciel
-  - phishing 
-  - hameçonnage
-  - MFA
+  - Intelligence Artificielle
+  - Artificial Intelligence
+  - IA agentique
+  - Agentic IA
+  - AI agents
+  - Agents IA
+  - telecom
   - Transformation numérique
   - Digital Transformation 
 ---
 💡Plongez dans un avenir où les infrastructures télécoms deviennent plus intelligentes, résilientes et autonomes !
 
-✒️Cet article explore les applications concrètes de l'IA agentique, avancée majeure dans le secteur des télécommunications, dépassant les simples interactions de support client. Conçus pour être autonomes, adaptatifs et orientés vers des objectifs spécifiques, ces agents numériques agissent en temps réel pour optimiser les réseaux, anticiper les défaillances et automatiser les processus complexes.
+✒️Cet article explore les applications concrètes de l'IA agentique, avancée technologique majeure, dans le secteur des télécommunications. Conçus pour être autonomes, adaptatifs et orientés vers des objectifs spécifiques, ces agents numériques agissent en temps réel pour optimiser les réseaux, anticiper les défaillances et automatiser les processus complexes, dépassant les simples interactions de support client.
 
-🔍Gestion dynamique du réseau, maintenance prédictive, amélioration continue des services... Découvrez par l'exemple comment le leaders du secteur comme AT&T, NTT Docomo et Vodafone, ont su s'approprier cette innovation devenant incontournable!
+🔍Gestion dynamique du réseau, maintenance prédictive, amélioration continue des services... Découvrez par l'exemple comment des acteurs du secteur comme AT&T, NTT Docomo, Orange et Vodafone, ont su s'approprier cette innovation devenant incontournable!
 
 ---
-***Avant-propos**: Cet article, augmenté d'améliorations générées avec des IA ([Napkin](https://www.napkin.ia) , [Microsoft Copilot](https://copilot.microsoft.com/), [NotebookLM](https://notebooklm.google.com/)), est mis à disposition au travers de la license* <span xmlns:cc="http://creativecommons.org/ns#" ><i><a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></i></span>
-
+***Avant-propos***
+- *Cet article, augmenté d'améliorations générées avec des IA ([Napkin](https://www.napkin.ia) , [Microsoft Copilot](https://copilot.microsoft.com/), [NotebookLM](https://notebooklm.google.com/)), est mis à disposition au travers de la license* <span xmlns:cc="http://creativecommons.org/ns#" ><i><a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></i></span>
+- *Le prochain article sera quant à lui dédié à l'impact de l'emploi d'agents AI sur les professionnels de TI. N'hésitez pas à suivre [mon compte BlueSky](https://bsky.app/profile/tiog.eu.org) ou à souscrire au [fil rss](https://www.reau.ca/feed.xml) pour ne pas rater sa sortie!*
 ---
 # Qu’est-ce que c’est l’IA agentique? #
 
-L'IA agentique, aussi appelée agents d'IA, représente une évolution technologique majeure. Elle permet aux systèmes d'aller bien au-delà des interactions de support client traditionnelles. Ces systèmes d’intelligence artificielle sont conçus pour faire preuve d'autonomie, de raisonnement, d'orientation vers un objectif, d'adaptabilité et de capacité à interagir de manière dynamique avec leur environnement. Ils agissent au nom d'humains ou de systèmes, prenant des décisions indépendantes, s'adaptant au fil du temps et atteignant des résultats spécifiés sans nécessiter de supervision constante.
+L'IA agentique, aussi appelée agents d'IA, représente un ensemble de systèmes d’intelligence artificielle conçus pour faire preuve d'autonomie, de raisonnement, d'orientation vers un objectif, d'adaptabilité et de capacité à interagir de manière dynamique avec leur environnement. Ils agissent au nom d'humains ou de systèmes, prenant des décisions indépendantes, s'adaptant au fil du temps et atteignant des résultats spécifiés sans nécessiter de supervision constante.
 
 Contrairement aux modèles d'IA statiques, les agents d'IA sont holistiques, adaptatifs et proactifs, agissant presque comme des employés numériques dotés de connaissances spécialisées et capables de faire évoluer leurs stratégies. Ils peuvent travailler ensemble à travers différents domaines, partageant des informations et coordonnant les réponses.
 
@@ -42,7 +40,9 @@ _L'application de l'IA agentique dans les télécommunications s'étend à plusi
 
 ## Gestion et optimisation du réseau ##
 <center><img src="/content/images/gestion_optim_reseau.jpg" alt="Gestion du réseau par les agents IA"></center>
-Les agents d'IA supervisent l'infrastructure du réseau en continu. Ils analysent des indicateurs clés de performance (KPI) et des métriques de performance. Ils peuvent détecter les goulots d'étranglement, les zones à latence élevée ou les nœuds surchargés. En réponse, ils mettent en œuvre des actions telles que le réacheminement dynamique du trafic ou l'allocation de bande passante pour assurer une disponibilité maximale et une qualité de service (QoS) optimale. L'IA suit en permanence l'activité du réseau et ajuste les ressources pour maintenir la stabilité. Les agents peuvent ajuster les paramètres du réseau pour une connectivité optimale en analysant les données des appareils connectés. L'AIOps est utilisée pour analyser les modèles d'utilisation du réseau, optimiser l'allocation des ressources et aider à la planification de l'infrastructure.
+Les agents d'IA supervisent l'infrastructure du réseau en continu. Ils analysent des indicateurs clés de performance (KPI) et des métriques de performance. Ils peuvent détecter les goulots d'étranglement, les zones à latence élevée ou les nœuds surchargés. En réponse, ils mettent en œuvre des actions telles que le réacheminement dynamique du trafic ou l'allocation de bande passante pour assurer une disponibilité maximale et une qualité de service (QoS) optimale. L'IA suit en permanence l'activité du réseau et ajuste les ressources pour maintenir la stabilité. Les agents peuvent ajuster les paramètres du réseau pour une connectivité optimale en analysant les données des appareils connectés.
+
+L'emploi de l'IA agentique entre en phase avec la pratique AIOps (Artificial Intelligence for IT Operations), où elle est utilisée pour analyser les modèles d'utilisation du réseau, optimiser l'allocation des ressources et aider à la planification de l'infrastructure.
 
 ### Exemples concrets ###
 

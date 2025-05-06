@@ -42,8 +42,11 @@ plugins:
 
 feed:
   categories:
-    - Work Tips
+    - Artificial Intelligence
     - IT Network
+    - IT Security
+    - Network Design
+    - Work Tips
 
 permalink: /:year/:month/:day/:title:output_ext
 

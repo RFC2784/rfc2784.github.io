@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "L'IA Agentique : Révolution dans les infrastructures télécoms"
+image:  "/content/images/agenticai_telecom.jpg"
 ref: agentaitelco
 lang: fr
 date:   2025-05-06 18:00:00 -0400

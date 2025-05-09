@@ -23,8 +23,9 @@ tags:
 ---
 # Trust Levels and IT Risk Management #
 Inspired by military domains, the first iterations of security zone management rely on a clear and structured organization of flows. There are mainly three types of zones:
-![Network security zones](/content/images/sec_zones.png)
 
+![Network security zones](/content/images/sec_zones_en.jpg)
+{: style="text-align: center"}
 **Trust Zones**
 
 These zones group everything with known and controlled origins, such as private user networks or internal servers.
@@ -39,7 +40,9 @@ These zones host services that, although managed from a trust zone, must be acce
 
 # Traffic Rules Between Trust Zones #
 Traffic flowing within the same zone encounters no restrictions. However, to ensure system security, communication between zones goes through strict controls, following these basic principles:
-![Traffic rules between trust zones](/content/images/sec_zones_2.png)
+
+![Traffic rules between trust zones](/content/images/sec_zones_2_en.jpg)
+{: style="text-align: center"}
 - Traffic initiated from a trust zone to DMZs and untrust zones is allowed. However, traffic initiated outside the trust zone is systematically blocked to prevent compromise.
 - The DMZ is by definition more exposed to risk, and therefore is accessible from both trust and untrust zones.
 
@@ -50,30 +53,37 @@ In less than half a century, malicious individuals have armed themselves with va
 
 ## Malware ##
 Designed to infiltrate, damage, or disrupt computer systems. There are several types including:
-- **Trojan horses**, malicious programs distributed as legitimate software to deceive users,
+- **Trojans**, malicious programs distributed as legitimate software to deceive users,
 - **Viruses**, which attach to files and spread when the host file is opened/executed,
 - **Worms**, which execute and propagate without user intervention,
-- **Ransomware**, which once infiltrated into systems, encrypts all data to allow attackers to demand payment for decryption.
-![Types of malware](/content/images/malware_types.png)
+- **Ransomware**, which once infiltrated into systems, encrypts all data to allow attackers to demand a ransom for decryption.
+
+![Types of malware](/content/images/malware_types_en.jpg)
+{: style="text-align: center"}
 
 ## Phishing ##
 This technique involves deceiving users into disclosing sensitive information, such as passwords or credit card numbers, by impersonating trusted entities. The most common variants are:
 - **Phishing**, via email, aimed at tricking users into clicking fraudulent links (fake websites, malware downloads, etc.)
 - **Smishing**, the SMS variant of phishing,
 - **Vishing**, by phone, aimed at tricking people into verbally revealing sensitive information.
-![Common techniques leading to information disclosure](/content/images/phish_techs.png)
+![Common techniques leading to information disclosure](/content/images/phish_techs_en.jpg)
+{: style="text-align: center"}
 
 ## Security Vulnerability Exploitation ##
 Although brute force attacks are still present, they are becoming less effective as security systems evolve.
 
 Instead, cybercriminals are turning to more sophisticated techniques to exploit system vulnerabilities. Security flaws can exist in software, operating systems, or even network configurations. Once a vulnerability is discovered, it can be exploited to execute malicious code, access sensitive data, or disrupt normal system operations. Targeted attacks, such as zero-day exploits, are particularly dangerous because they exploit vulnerabilities unknown to developers and users, leaving little time to react and patch the flaws.
-![Understanding system vulnerabilities and cyber threats](/content/images/understand_vuln.png)
+
+![Understanding system vulnerabilities and cyber threats](/content/images/understand_vuln_en.jpg)
+{: style="text-align: center"}
 
 ## Denial of Service Attacks ##
 You know when the e-commerce site you're browsing shows a 503 error during Black Friday? That's a denial of service caused by traffic overload, because you're not alone in trying to get those deals ;-)
 
 This undesirable side effect has inspired cyber villains, who have found ways to coordinate high-amplitude attacks to make entire services and networks inoperable by overwhelming them with useless requests.
-![Denial of service attacks](/content/images/DDoS.png)
+
+![Denial of service attacks](/content/images/DDoS_en.jpg)
+{: style="text-align: center"}
 
 # Zero Trust Model: "There's Nobody You Can Trust Anymore..." #
 By examining the main attack vectors, it's become obvious that cyber threats seek to disrupt normal data flow patterns in a system. In other words, attackers try to manipulate or hijack normal data flows to access confidential information and compromise the security of the targeted system.
@@ -83,7 +93,9 @@ The concept of **Zero Trust Network Access** has emerged as an effective remedy 
 ## What's This Zero Trust Thing? ##
 
 Unlike traditional security models based on trust perimeters, the Zero Trust model assumes that no entity, whether inside or outside the network, should automatically be trusted.
-![Zero Trust Security Framework](/content/images/0trust_framework.png)
+
+![Zero Trust Security Framework](/content/images/0trust_framework_en.jpg)
+{: style="text-align: center"}
 
 Zero Trust is based on several key principles:
 - **Continuous verification**: Every attempt to access resources must be authenticated and authorized, regardless of the request's origin.
@@ -92,7 +104,8 @@ Zero Trust is based on several key principles:
 - **Monitoring and analysis**: Constant monitoring and behavior analysis enable quick detection and response to suspicious activities.
 
 ## What Does It Take to Implement Zero Trust? ##
-![Implementing a Zero Trust Strategy](/content/images/0trust_strat.png)
+![Implementing a Zero Trust Strategy](/content/images/0trust_strat_en.jpg)
+{: style="text-align: center"}
 
 Implementing a Zero Trust strategy requires a comprehensive and integrated approach. Here are some essential steps to adopt this model:
 1. **Asset and risk assessment**: Identify critical assets and evaluate risks associated with their access and use.
@@ -102,7 +115,8 @@ Implementing a Zero Trust strategy requires a comprehensive and integrated appro
 5. **Continuous monitoring**: Deploy monitoring and analysis tools to detect anomalies and respond quickly to security incidents.
 
 ## Sounds Good, But What Are the Benefits? ##
-![Benefits of implementing the Zero Trust model](/content/images/0trust_perks.png)
+![Benefits of implementing the Zero Trust model](/content/images/0trust_perks_en.jpg)
+{: style="text-align: center"}
 
 Well, yes :) It mainly provides the following advantages:
 - **Reduced attack surface**: By limiting access and segmenting the network, there are fewer opportunities for hackers to find a breach.
@@ -117,13 +131,15 @@ It's a bit like Kevin's story who, after saving for several years, just bought h
 
 Of course, as you might guess, quite a story unfolds:
 - Thieves broke into the yard, took advantage while Spot was sleeping to loot and wreck the precious vehicle, leaving only a wreck good for scrap.
-- Even worse, they stole Kevin's backpack that was inside, containing what Kevin cherished even more than his car: his Pokémon card collection!
+- Even worse, they stole Kevin's backpack that was inside, containing what Kevin cherished even more than his car: his Pokemon card collection!
 - The very next day, the thieves contact our young friend to extort such an indecent ransom that he'll end up missing his only chance to ever see his mint condition shiny MewTwo again...
 
 # Conclusion #
 *Kevin's story perfectly illustrates why modernizing IT system security is crucial, even if it might seem costly and unnecessary at first glance. Here's what we can learn from it.*
 
-Kevin thought his quiet neighborhood and faithful dog were enough to protect his precious car and Pokémon card collection. But when thieves struck, he lost much more than what he had saved for years. Only after this painful experience did he understand the importance of investing in robust security measures, like a secure garage and surveillance system.
+Kevin thought his quiet neighborhood and faithful dog were enough to protect his precious car and Pokemon card collection. But when thieves struck, he lost much more than what he had saved for years. Only after this painful experience did he understand the importance of investing in robust security measures, like a secure garage and surveillance system.
 
-Similarly, companies might think their current systems are sufficient because they've never been attacked. But cyber threats constantly evolve, and what was safe yesterday isn't safe today. **Waiting for an attack to happen before acting can cost much more than modernizing security now**. By investing in advanced security solutions like Zero Trust, companies can prevent catastrophic losses and protect their most precious assets, just as Kevin finally protected his new car and Pokémon card collection.
-![Investing in security prevents losses](/content/images/0trust_invest.png)
+Similarly, companies might think their current systems are sufficient because they've never been attacked. But cyber threats constantly evolve, and what was safe yesterday isn't safe today. **Waiting for an attack to happen before acting can cost much more than modernizing security now**. By investing in advanced security solutions like Zero Trust, companies can prevent catastrophic losses and protect their most precious assets, just as Kevin finally protected his new car and Pokemon card collection.
+
+![Investing in security prevents losses](/content/images/0trust_invest_en.jpg)
+{: style="text-align: center"}

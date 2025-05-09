@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Our responsibility towards IT Network Security"
+ref: ourrespsecit
+lang: en
 date:   2021-04-20 13:00:00 -0500
 category: IT Network
 tags:
@@ -71,6 +73,6 @@ As mentioned upper regarding a more global scope, **IT Network Security in Profe
 
 ##  Call to discussion ! ##
 
-As you can see, this article reflects solely my opinion on this subject, and needs more external material.
+As you can see, this article reflects solely my opinion on this subject.
 
 So **don't hesitate to follow my [LinkedIn Feed](https://www.linkedin.com/in/greau/detail/recent-activity/) and <u>react to that article with your own thoughs and words</u>** !

@@ -1,5 +1,6 @@
 ---
 layout: page
+lang: en
 title: About
 permalink: /about/
 ---

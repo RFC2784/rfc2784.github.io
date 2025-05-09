@@ -1,9 +1,9 @@
 ---
 layout: page
 ref: categories
-lang: fr
-permalink: /categories/
-title: Categories
+lang: en
+permalink: /categories-en/
+alt-title: Categories
 ---
 
 <ul class="social-media-list">

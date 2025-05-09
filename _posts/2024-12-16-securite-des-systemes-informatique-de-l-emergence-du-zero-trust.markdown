@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Sécurité des systèmes informatiques : de l’émergence du Zero Trust"
+ref: itsecztrust
+lang: fr
 date:   2024-12-16 11:45:00 -0400
 categories:
   - IT Network

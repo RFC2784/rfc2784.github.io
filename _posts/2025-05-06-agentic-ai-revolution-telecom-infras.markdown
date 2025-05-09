@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Agentic AI: Revolutionizing Telecom Infrastructures"
+image:  "/content/images/agenticai_telecom_en.jpg"
 ref: agentaitelco
 lang: en
 date:   2025-05-06 18:00:00 -0400

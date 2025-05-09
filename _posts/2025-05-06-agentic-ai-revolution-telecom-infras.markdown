@@ -16,7 +16,7 @@ tags:
   - telecom
   - Digital Transformation
 ---
-💡*Dive into a future where telecom infrastructures become smarter, more resilient, and autonomous!*<br/><br/>✒️*This article explores the practical applications of agentic AI, a major technological advancement, in the telecommunications sector. Designed to be autonomous, adaptive, and goal-oriented, these digital agents act in real-time to optimize networks, anticipate failures, and automate complex processes, going far beyond simple customer support interactions.*<center><img src="/content/images/agenticai_telecom_en.jpg" alt="Agentic AI: Revolutionizing Telecom Infrastructure"></center>🔍*Dynamic network management, predictive maintenance, continuous service improvement... Learn through examples how industry leaders like AT&T, NTT Docomo, Orange, and Vodafone have embraced this game-changing innovation!*
+<center><img src="/content/images/agenticai_telecom_en.jpg" alt="Agentic AI: Revolutionizing Telecom Infrastructure"></center>💡*Dive into a future where telecom infrastructures become smarter, more resilient, and autonomous!*<br/><br/>✒️*This article explores the practical applications of agentic AI, a major technological advancement, in the telecommunications sector. Designed to be autonomous, adaptive, and goal-oriented, these digital agents act in real-time to optimize networks, anticipate failures, and automate complex processes, going far beyond simple customer support interactions.*<br/><br/>🔍*Dynamic network management, predictive maintenance, continuous service improvement... Learn through examples how industry leaders like AT&T, NTT Docomo, Orange, and Vodafone have embraced this game-changing innovation!*
 
 ---
 ***Foreword***

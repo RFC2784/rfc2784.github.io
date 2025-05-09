@@ -35,7 +35,7 @@ google_analytics: G-625TCRJR1K
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Build settings
-remote_theme: jekyll/minima@d4d779a
+remote_theme: jekyll/minima@0b7ca6b
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

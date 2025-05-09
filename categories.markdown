@@ -1,9 +1,23 @@
 ---
 layout: page
+ref: categories
+lang: fr
 permalink: /categories/
 title: Categories
 ---
 
+<ul class="social-media-list">
+{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+{% for entry in pages %}
+  <li>
+    {% if entry.lang == page.lang %}
+    <a href="{{ entry.url }}" class="{{ entry.lang }}"><b>{{ entry.lang }}</b></a>
+    {% else %}
+    <a href="{{ entry.url }}" class="{{ entry.lang }}">{{ entry.lang }}</a>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>    
 
 <div id="archives">
 {% for category in site.categories %}
@@ -15,9 +29,11 @@ title: Categories
     <h3 class="category-head">{{ category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
+    {% if post.lang == page.lang %}
     <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a></h4>
     </article>
+    {% endif %}
     {% endfor %}
   </div>
 {% endfor %}

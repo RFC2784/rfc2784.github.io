@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "L'IA Agentique : Révolution dans les infrastructures télécoms"
+ref: agentaitelco
+lang: fr
 date:   2025-05-06 18:00:00 -0400
 categories:
   - Artificial Intelligence
@@ -100,7 +102,7 @@ L'IA agentique peut analyser les données clients et prédire les offres les plu
 ### Exemple concret ###
 - T-Mobile utilise l'IA basée sur le comportement utilisateur en temps réel pour personnaliser les offres<sup>[8]</sup>. Les agents de vente IA peuvent identifier les clients susceptibles de passer à des forfaits supérieurs ou de renouveler leurs contrats.
 
-<sup>[8]</sup> [AWS - At T-Mobile, AI Humanizes Customer ServiceAt T-Mobile, AI Humanizes Customer Service](https://aws.amazon.com/machine-learning/customers/innovators/t_mobile/)
+<sup>[8]</sup> [AWS - At T-Mobile, AI Humanizes Customer Service](https://aws.amazon.com/machine-learning/customers/innovators/t_mobile/)
 ## Analyse et reporting ##
 <center><img src="/content/images/analyse_report_ia.jpg" alt="Cycle d'Analyse et de Reporting"></center>
 Les agents peuvent consolider les données provenant de diverses sources et générer des tableaux de bord et des rapports automatisés pour les dirigeants et les équipes, facilitant ainsi la prise de décision basée sur les données. 

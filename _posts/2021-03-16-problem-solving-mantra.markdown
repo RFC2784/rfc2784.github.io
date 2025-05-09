@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Problem solving mantra"
+ref: pbsolmtra
+lang: en
 date:   2021-03-16 11:10:00 -0500
 category: Work Tips
 tags:
@@ -27,7 +29,7 @@ I can't remember how this came to my knowledge, so I don't know who I can credit
 #### How those simple words can affect a life path ####
 <center><img src="https://www.reau.ca/content/images/20210316101008-crossroads.jpg" alt="Crossroads"></center>
 
-Anyways, it has driven my decisions and choices at least thorough the past 15 years, with quite a good success :
+Anyways, it has driven my decisions and choices at least since the early 2000s, with quite a good success :
 
  - When I switched from nurse studies to IT field for health concerns,
  - When I left my native area to work on Paris (France) following a dark year,
@@ -44,4 +46,5 @@ From my point of view, using this mantra as a decisional leverage, combinated wi
 
 ## Make those words yours ! ##
 As it worked for me, I have no doubt that some of you will find out that this "mantra" makes sense !
-And if it can help you to complete your daily challenges as from now, I will be more than pleased :)
+
+And if it can help you to complete your daily challenges as from now, I will be more than pleased 😊

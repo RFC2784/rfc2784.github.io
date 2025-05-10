@@ -78,7 +78,7 @@ This undesirable side effect has inspired cyber villains, who have found ways to
 
 ![Denial of service attacks](/content/images/DDoS_en.jpg){: style="display: block; margin: 0 auto;"}
 
-# Zero Trust Model: "There's Nobody You Can Trust Anymore..."
+# Zero Trust Model: "You can't trust jack squat these days, for real..."
 By examining the main attack vectors, it's become obvious that cyber threats seek to disrupt normal data flow patterns in a system. In other words, attackers try to manipulate or hijack normal data flows to access confidential information and compromise the security of the targeted system.
 
 The concept of **Zero Trust Network Access** has emerged as an effective remedy to this de facto decompartmentalization.
@@ -121,14 +121,14 @@ It's a bit like Kevin's story who, after saving for several years, just bought h
 
 Of course, as you might guess, quite a story unfolds:
 - Thieves broke into the yard, took advantage while Spot was sleeping to loot and wreck the precious vehicle, leaving only a wreck good for scrap.
-- Even worse, they stole Kevin's backpack that was inside, containing what Kevin cherished even more than his car: his Pokemon card collection!
+- Even worse, they stole Kevin's backpack that was inside, containing what Kevin cherished even more than his car: his Pokémon card collection!
 - The very next day, the thieves contact our young friend to extort such an indecent ransom that he'll end up missing his only chance to ever see his mint condition shiny MewTwo again...
 
 # Conclusion
 *Kevin's story perfectly illustrates why modernizing IT system security is crucial, even if it might seem costly and unnecessary at first glance. Here's what we can learn from it.*
 
-Kevin thought his quiet neighborhood and faithful dog were enough to protect his precious car and Pokemon card collection. But when thieves struck, he lost much more than what he had saved for years. Only after this painful experience did he understand the importance of investing in robust security measures, like a secure garage and surveillance system.
+Kevin thought his quiet neighborhood and faithful dog were enough to protect his precious car and Pokémon card collection. But when thieves struck, he lost much more than what he had saved for years. Only after this painful experience did he understand the importance of investing in robust security measures, like a secure garage and surveillance system.
 
-Similarly, companies might think their current systems are sufficient because they've never been attacked. But cyber threats constantly evolve, and what was safe yesterday isn't safe today. **Waiting for an attack to happen before acting can cost much more than modernizing security now**. By investing in advanced security solutions like Zero Trust, companies can prevent catastrophic losses and protect their most precious assets, just as Kevin finally protected his new car and Pokemon card collection.
+Similarly, companies might think their current systems are sufficient because they've never been attacked. But cyber threats constantly evolve, and what was safe yesterday isn't safe today. **Waiting for an attack to happen before acting can cost much more than modernizing security now**. By investing in advanced security solutions like Zero Trust, companies can prevent catastrophic losses and protect their most precious assets, just as Kevin finally protected his new car and Pokémon card collection.
 
 ![Investing in security prevents losses](/content/images/0trust_invest_en.jpg){: style="display: block; margin: 0 auto;"}

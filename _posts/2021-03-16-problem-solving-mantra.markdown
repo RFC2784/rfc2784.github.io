@@ -1,50 +1,51 @@
 ---
 layout: post
-title:  "Problem solving mantra"
+title: "Problem Solving Mantra"
 ref: pbsolmtra
 lang: en
-date:   2021-03-16 11:10:00 -0500
+date: 2021-03-16 11:10:00 -0500
 category: Work Tips
 tags:
   - first blog
   - mantra
-  - motivational  
+  - motivational
 ---
-## Life is succession of challenges... ##
-#### ... that we face on a daily basis : ####
 
- - Most part of those are easy to overcome, and are completed in a matter of seconds,
- - But some will appear overwhelming, and will take much time to achieve !
+## Life is a succession of challenges...
+#### ...that we face on a daily basis:
+- Most of these challenges are easy to overcome and are completed in a matter of seconds.
+- But some may appear overwhelming and take much longer to resolve.
 
-<center><img src="https://www.reau.ca/content/images/20210316091209-motivational_1.jpg" width=400px alt="Nobody said it was easy..."></center>
+![Nobody said it was easy...](/content/images/20210316091209-motivational_1.jpg){: style="display: block; margin: 0 auto; width: 400px;"}
 
-#### *With such assessment, we can agree that everybody need some waypoints to go through life.* ####
-Regarding my personal and professional background, that is a good example of this succession of ups and downs, <u>I use a simple motto as my main waypoint, like **a mantra which sum-up my approach for problem solving**</u> :
+#### *With this understanding, we can agree that everyone needs some waypoints to navigate through life.*
+Drawing from my personal and professional background, which exemplifies this succession of ups and downs, I use a simple motto as my main waypoint—a **mantra that sums up my approach to problem-solving.**
 
-##  My personal mantra  ##
-> *If there is no solution, there is no problem.* --- Unknown
+## My Personal Mantra
+> *If there is no solution, there is no problem.*  
+> --- Unknown
 
-I can't remember how this came to my knowledge, so I don't know who I can credit for that quote! [Google Search](https://www.google.com/search?q=If%20there%20is%20no%20solution,%20there%20is%20no%20problem) hesitate between Buddhism (Dalai Lama) and Dadaism (Marcel Duchamp)...
+I can't recall how I first encountered this quote, so I don't know who to credit! [Google Search](https://www.google.com/search?q=If%20there%20is%20no%20solution,%20there%20is%20no%20problem) suggests it could be attributed to either Buddhism (Dalai Lama) or Dadaism (Marcel Duchamp).
 
-#### How those simple words can affect a life path ####
-<center><img src="https://www.reau.ca/content/images/20210316101008-crossroads.jpg" alt="Crossroads"></center>
+#### How these simple words can shape a life path
+![Crossroads](/content/images/20210316101008-crossroads.jpg){: style="display: block; margin: 0 auto;"}
 
-Anyways, it has driven my decisions and choices at least since the early 2000s, with quite a good success :
+This mantra has guided my decisions and choices since at least the early 2000s, with notable success:
 
- - When I switched from nurse studies to IT field for health concerns,
- - When I left my native area to work on Paris (France) following a dark year,
- - When my wife and I chose to emigrate to Canada at the very moment we felt that our lives needed to level-up  !
+- When I switched from nursing studies to the IT field due to health concerns.
+- When I left my hometown to work in Paris (France) after a difficult year.
+- When my wife and I decided to emigrate to Canada at a pivotal moment in our lives.
 
-#### How those simple words can help on a working routine ####
-<center><img src="https://www.reau.ca/content/images/20210316100558-motivational_2.jpg" alt="Idea"></center>
+#### How those simple words can help on a working routine
+![Idea](/content/images/20210316100558-motivational_2.jpg){: style="display: block; margin: 0 auto;"}
 
-From my point of view, using this mantra as a decisional leverage, combinated with a solid professional expertise, is a good way to find relevant (sometimes  out-of-bounds) solutions to :
- 
- - some network and security designs that needs to be efficient with the lowest building and recurring fees,
- - blocking points you can face when you integrate some unknown technology,
- - the most critical issues when all well-known solving paths can't apply.
+From my perspective, using this mantra as a decision-making tool, combined with solid professional expertise, is an effective way to find relevant (and sometimes unconventional) solutions to:
 
-## Make those words yours ! ##
-As it worked for me, I have no doubt that some of you will find out that this "mantra" makes sense !
+- Network and security designs that need to be efficient while minimizing costs.
+- Challenges encountered when integrating unfamiliar technologies.
+- Critical issues where conventional solutions do not apply.
 
-And if it can help you to complete your daily challenges as from now, I will be more than pleased 😊
+## Make These Words Yours!
+As this mantra has worked for me, I have no doubt that some of you will find it meaningful too.
+
+If it helps you tackle your daily challenges starting today, I will be more than pleased! 😊

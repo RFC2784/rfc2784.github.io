@@ -46,6 +46,8 @@ feed:
     - IT Network
     - IT Security
     - Network Design
+    - Opinions
+    - Society
     - Work Tips
 permalink: /:year/:month/:day/:title:output_ext
 

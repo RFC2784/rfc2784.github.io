@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "IA et automatisation : Face au \"Far West\", l'Urgence d'Armer nos Esprits"
-image:  "/content/images/ai_farwest.jpg"
+title: "IA et automatisation : Face au 'Far West', l'Urgence d'Armer nos Esprits"
+image: "/content/images/ai_farwest.jpg"
 ref: aifarwest
 lang: fr
 date:   2025-06-11 06:00:00 -0400
 categories:
   - Artificial Intelligence
-  - Opinion
+  - Opinions
   - Society
 tags:
   - Intelligence Artificielle

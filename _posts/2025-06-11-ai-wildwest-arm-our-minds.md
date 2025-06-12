@@ -5,6 +5,7 @@ image: "/content/images/ai_farwest.jpg"
 ref: aiwildwest
 lang: en
 date: 2025-06-11 06:00:00 -0400
+redirect_from: /2025/06/11/ai-farwest-arm-our-minds.html
 categories:
   - Artificial Intelligence
   - Opinions

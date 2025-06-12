@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "AI and Automation: Facing the 'Far West,' the Urgent Need to Arm Our Minds"
+title: "AI and Automation: Facing the 'Wild West,' the Urgent Need to Arm Our Minds"
 image: "/content/images/ai_farwest.jpg"
-ref: aifarwest
+ref: aiwildwest
 lang: en
 date: 2025-06-11 06:00:00 -0400
+redirect_from: /2025/06/11/ai-farwest-arm-our-minds.html
 categories:
   - Artificial Intelligence
   - Opinions
@@ -43,9 +44,9 @@ But today, **with the arrival of advanced AI** (deep learning, machine learning,
 
 We are living through a profound transformation of the job market, a revolution where advanced automation and artificial intelligence (AI) are redefining our future at a dizzying speed.
 
-Faced with what I feel is **a true technological "Far West,"** where tools of incredible power are thrown into our laps, almost with the message ***'go on, figure it out yourself,'*** it is imperative to <u>reaffirm the prevalence of critical and ethical human intelligence through a radical transformation of education</u>.
+Faced with what I feel is **a true technological "Wild West,"** where tools of incredible power are thrown into our laps, almost with the message ***'go on, figure it out yourself,'*** it is imperative to <u>reaffirm the prevalence of critical and ethical human intelligence through a radical transformation of education</u>.
 
-# A Stunning "Far West" with a Whiff of Intellectual Resignation
+# A Stunning "Wild West" with a Whiff of Intellectual Resignation
 
 The emergence of tools like ChatGPT has been stunning, producing an endless stream of increasingly relevant content, bordering on the extraordinary. But this fascination must not hide a reality: ***generative AIs arrived as if no one saw it coming***.
 <picture>
@@ -134,7 +135,7 @@ The meteoric rise of advanced artificial intelligence inevitably raises the ques
 </picture>
 First, it is about **defining a framework, a governance that frames the use of data**: what type of data can be used, by what type of AI, and under what specific conditions? This implies scrupulous respect for copyright and intellectual property, to prevent models from becoming plunderers of content protected by intellectual property rights.
 
-As early as 2016, the report ["Preparing for the Future of Artificial Intelligence" (October 2016)](https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf) also recommended that the US government explore how to make high-quality federal datasets more accessible to the public and AI researchers, while protecting privacy and security. The main principles of responsible AI must ensure that its development and deployment are carried out **with full transparency and in accordance with our fundamental values**, rather than letting us navigate this "Far West" where anything seems permissible.
+As early as 2016, the report ["Preparing for the Future of Artificial Intelligence" (October 2016)](https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/preparing_for_the_future_of_ai.pdf) also recommended that the US government explore how to make high-quality federal datasets more accessible to the public and AI researchers, while protecting privacy and security. The main principles of responsible AI must ensure that its development and deployment are carried out **with full transparency and in accordance with our fundamental values**, rather than letting us navigate this "Wild West" where anything seems permissible.
 
 Beyond just data, responsible <u>AI also concerns the ethics regarding AI itself</u>: **how do we use it within governments, companies, and administrations?** It is crucial to define how it is implemented for specific tasks, **ensuring that the human being is always the one who must keep their hand on the tiller**.
 

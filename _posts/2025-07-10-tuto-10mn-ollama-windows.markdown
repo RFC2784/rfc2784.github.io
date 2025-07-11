@@ -7,7 +7,7 @@ lang: fr
 date:   2025-07-11 00:30:00 -0400
 categories:
   - Artificial Intelligence
-  - Tutorial
+  - Tutorials
 tags:
   - Intelligence Artificielle
   - IA

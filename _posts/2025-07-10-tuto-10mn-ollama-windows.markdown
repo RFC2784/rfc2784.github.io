@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10-mn tuto : installer un LLM local sur Windows avec Ollama"
+title: "10-mn tuto : Installer un LLM local sur Windows avec Ollama"
 image: "/content/images/ollama-tuto.jpg"
 ref: localllmtuto
 lang: fr

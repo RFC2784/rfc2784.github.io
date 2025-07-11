@@ -118,7 +118,7 @@ J’ai validé ce tutoriel sur des machines virtuelles qui utilisent cette confi
 **gemma3:1b-it-qat** désigne un version légère et efficace du modèle Open Source [Gemma 3](https://deepmind.google/models/gemma/gemma-3/) de Google:
 
 * <u>1 milliard de paramètres (“1b”)</u>.
-* <u>Instruction-tuned ("it")</u> : Optimisée pour suivre des instructions et répondre de manière conversationnelle, **ce modèle est idéal pour la génération de texte, le résumé et la traduction**.
+* <u>Instruction-tuned ("it")</u> : Optimisé pour suivre des instructions et répondre de manière conversationnelle, **ce modèle est idéal pour la génération de texte, le résumé et la traduction**.
 * <u>Quantization-Aware Trained ("qat")</u> : Entraîné pour supporter la quantification (par exemple en 4 bits), ce qui **réduit considérablement la mémoire nécessaire tout en maintenant une qualité proche des modèles plus lourds**.
 
 ## C’est comment qu’on fait ? (Guide étape par étape)
@@ -204,7 +204,7 @@ winget install --id=Ollama.Ollama --accept-source-agreements -e; winget install 
 
 <img src="/content/images/ollama_model_list.jpg" alt="" style="display: block; margin: 0 auto;"><br/>
 
-### Supprimer entièrement les composants installés
+### (Si besoin) Supprimer entièrement les composants installés
 * Ouvrez PowerShell en mode administrateur \([cf. 1ère étape](#ouvrez-powershell-en-mode-administrateur)\),
 * Exécutez la commande suivante pour supprimer tous les composants installés (applications et modèles) :
 {% highlight powershell %}

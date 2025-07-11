@@ -204,7 +204,7 @@ winget install --id=Ollama.Ollama --accept-source-agreements -e; winget install 
 
 <img src="/content/images/ollama_model_list_en.jpg" alt="" style="display: block; margin: 0 auto;"><br/>
 
-### Completely remove installed components
+### (If needed) Completely remove installed components
 * Open PowerShell as administrator \([see first step](#open-powershell-as-administrator)\),
 * Run the following command to remove all installed components (apps and models):
 {% highlight powershell %}

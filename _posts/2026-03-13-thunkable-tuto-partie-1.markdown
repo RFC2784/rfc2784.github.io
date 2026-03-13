@@ -44,7 +44,7 @@ Notre application comportera deux écrans : un écran d'accueil avec un bouton "
 Firebase est la plateforme de Google qui fournit des services backend prêts à l'emploi. Nous allons utiliser sa **Realtime Database**.
 
 1. Connectez-vous à la [Console Firebase](https://console.firebase.google.com/) avec un compte Google et cliquez sur **Créer un projet** (nommez-le *MotivApp*).
-2. Dans le menu de gauche, allez dans **Bases de données et st...** > **Realtime Database** et cliquez sur **Créer une base de données**. Sélectionner la région la plus proche de vous, puis choisissez le mode test pour commencer facilement.
+2. Dans le menu de gauche, allez dans **Bases de données et stockage d'objets** > **Realtime Database** et cliquez sur **Créer une base de données**. Sélectionner la région la plus proche de vous, puis choisissez le mode test pour commencer facilement.
 3. Dans l'onglet **Données**, nous allons structurer notre base avec des identifiants uniques pour que ce soit robuste. Cliquez sur les trois petits points à droite de l'URL de votre base, choisissez **Importer un fichier JSON**, et importez un fichier contenant ceci :
 
 {% highlight json %}

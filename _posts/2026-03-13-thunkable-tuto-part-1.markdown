@@ -4,7 +4,7 @@ title: "Thunkable Tuto (1/2): Create a Cloud-connected mobile app with Firebase,
 image: "/content/images/thunkable-tuto-part1.jpg"
 ref: thunkablefirebasep1
 lang: en
-date:   2026-03-13 12:00:00 -0400
+date:   2026-03-13 06:00:00 -0400
 categories:
   - Tutorials
   - No-Code

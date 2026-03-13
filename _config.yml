@@ -21,11 +21,11 @@
 title: reau.ca
 lang: fr
 author:
-  name: Geoffray RÉAU
+  name: Geoff RÉAU
   email: contact@reau.ca
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Geoffray RÉAU is a confirmed Technology Delivery Lead with 19+ years of experience in Infrastructure Technology.
+  Geoff RÉAU is a confirmed Technology Delivery Lead with 20+ years of experience in Infrastructure Technology.
   From Design to Delivery and beyond, Geoff is dedicated to supporting clients every step of the way, ensuring trust and delivering impactful technology solutions.
 
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -46,6 +46,7 @@ feed:
     - IT Network
     - IT Security
     - Network Design
+    - No-Code
     - Opinions
     - Tutorials
     - Society
@@ -86,13 +87,13 @@ minima:
 #       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
 #       * url      Full URL of social profile.
   social_links:
-    - title: Geoffray Réau at GitHub
+    - title: Geoff Réau at GitHub
       icon: github
       url: "https://github.com/rfc2784"
-    - title: Geoffray Réau at LinkedIn
+    - title: Geoff Réau at LinkedIn
       icon: linkedin
       url: "https://www.linkedin.com/in/greau/"
-    - title: Geoffray Réau at BlueSky
+    - title: Geoff Réau at BlueSky
       icon: bluesky
       url: "https://bsky.app/profile/tiog.eu.org"
 #

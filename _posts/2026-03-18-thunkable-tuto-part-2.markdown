@@ -4,7 +4,7 @@ title: "Thunkable Tuto (2/2): Make your mobile app smart with the Google Gemini 
 image: "/content/images/thunkable-gemini-tuto.jpg"
 ref: thunkablegeminip2
 lang: en
-date:   2026-03-18 00:00:00 -0400
+date:   2026-03-18 06:00:00 -0400
 categories:
   - Tutorials
   - No-Code
@@ -85,11 +85,11 @@ The response MUST follow this strict format: 'Quote - Author'. Do not exceed 20 
   * Configure the API URL: set the field "URL" to `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent`.
   * Configure your API key: 
     * Set the field "Property" to `key`
-    * Paste your API key in the field `Value`.
+    * Paste your API key in the field "Value".
     * Click on [Add].
   * Setup the header:
     * Set the field "Property" to `Content-Type`
-    * Paste your API key in the field `application/json`.
+    * Set the field "Value" to `application/json`.
     * Click on [Add].
   * Click on [Done].
 
@@ -109,7 +109,7 @@ The Gemini API is very strict about the data format it receives. It expects a JS
 **Extracting the JSON response:**
 * Trigger the call with the `call Web_API's Post` block.
 * The API replies with a large block of complex textual data.
-* In the green `then do` section of the Post block, use the `get object from JSON` block to turn the `response` into an object Thunkable can manipulate.
+* In the green `then do` section of the Post block, use the `get object from JSON` block to turn the `response` into a variable named `quote`.
 * Use the `get property` blocks to dig into this object. The exact path to extract Gemini's raw text is: `candidates[1]` -> `content` -> `parts[1]` -> `text`.
 * **Separating the quote from the author:** Since we forced Gemini (with our RISEN's N) to reply in the "Quote - Author" format, we are going to split this text in two!
   1. Create a `response_list` variable.

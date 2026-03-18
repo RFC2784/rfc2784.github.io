@@ -56,7 +56,7 @@ This is the core of the reactor. To prevent the AI from rambling, we will struct
 * **E (End Goal):** The reader must feel an immediate urge to take action.
 * **N (Narrowing):** The response MUST follow this strict format: 'Quote - Author'. Do not exceed 20 words. Do not include any greetings.
 
-Here is exactly the final text our app will assemble, replacing the end variable with the theme chosen by the user:
+Here is exactly the final text our app will assemble, replacing the end `app` variable with the theme chosen by the user:
 
 {% highlight text %}
 Act as an expert motivational life coach. 
@@ -97,24 +97,31 @@ The response MUST follow this strict format: 'Quote - Author'. Do not exceed 20 
 
 The Gemini API is very strict about the data format it receives. It expects a JSON object containing a `contents` list, which itself contains a `parts` list, which finally contains the `text` attribute with our prompt. In Thunkable, the easiest way to build this request body is to use a text block.
 
-1. First, create a `full_prompt` variable and use a `join` block to stick the large RISEN text block (seen in step 3) with the `Text` in the `Input_Theme` component.
+1. First, create an `app` variable named `full_prompt` and use a `join` block to stick the large RISEN text block (seen in step 3) with the `Text` in the `Input_Theme` component.
 2. Grab another advanced `join` block (which allows pasting several pieces of text together).
 3. In the first box, paste exactly this beginning of JSON code: `{"contents": [{"parts": [{"text": "`
-4. In the second box, drag your `full_prompt` variable.
+4. In the second box, drag your `full_prompt` `app` variable.
 5. In the third box, close the JSON code with: `"}]}]}`
 6. Assign the whole thing to the `set Web_API's Body to` block.
 
 <img src="/content/images/thunkable_prompt_building.jpg" alt="Prompt building" style="display: block; margin: 0 auto;">
 
 **Extracting the JSON response:**
-* Trigger the call with the `call Web_API's Post` block.
-* The API replies with a large block of complex textual data.
-* In the green `then do` section of the Post block, use the `get object from JSON` block to turn the `response` into a variable named `quote`.
-* Use the `get property` blocks to dig into this object. The exact path to extract Gemini's raw text is: `candidates[1]` -> `content` -> `parts[1]` -> `text`.
-* **Separating the quote from the author:** Since we forced Gemini (with our RISEN's N) to reply in the "Quote - Author" format, we are going to split this text in two!
-  1. Create a `response_list` variable.
-  2. Assign to it the `make list from text` block (in *Lists*), using the text extracted from Gemini, and type `" - "` in the `delimiter` box.
-  3. Now that we collected the citation, we can Navigate to Screen2
+* Trigger the call with the `call Gemini's Post` block.
+* The API replies with a large block of complex textual data (`response`).
+* In the `then do` section, we will isolate the text we want by nesting several blocks, much like Russian dolls. We will assign this entire path to a new `citation` `app` variable.
+* To fully understand this large red and blue block, read it from right to left (from the inside out):
+  1. We turn the raw text into a manageable object: `get object from JSON [response]`.
+  2. We extract the `candidates` property.
+  3. This is a list, so we grab the first item: `in list [...] get # 1`.
+  4. We extract the `content` property.
+  5. We extract the `parts` property.
+  6. This is also a list, so we grab the first item: `in list [...] get # 1`.
+  7. We finally extract the `text` property.
+* **Separating the quote from the author:**
+  1. Create an `app liste_reponse` `app` variable.
+  2. Assign to it the `make list from text` block (in *Lists*), using our `citation` `app` variable, and type `" - "` in the `delimiter` box.
+  3. Now that our data is clean and split, finish by dragging the `Maps to Screen2` block.
   
 <img src="/content/images/thunkable_gemini_json_extract.jpg" alt="Web API Call and JSON parsing" style="display: block; margin: 0 auto;"><br/>
 

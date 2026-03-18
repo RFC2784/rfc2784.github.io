@@ -57,7 +57,7 @@ C'est le cœur du réacteur. Pour éviter que l'IA ne divague, nous allons struc
 * **E (End Goal) :** Le lecteur doit ressentir une envie immédiate de passer à l'action.
 * **N (Narrowing) :** La réponse DOIT suivre ce format strict : 'Citation - Auteur'. Ne dépasse pas 20 mots. N'inclus aucune salutation.
 
-Voici exactement le texte final que notre application va assembler, en remplaçant la variable de fin par le thème choisi par l'utilisateur :
+Voici exactement le texte final que notre application va assembler, en remplaçant la `app` variable de fin par le thème choisi par l'utilisateur :
 
 {% highlight text %}
 Agis comme un coach de vie expert en motivation. 
@@ -98,24 +98,30 @@ La réponse DOIT suivre ce format strict : 'Citation - Auteur'. Ne dépasse pas 
 
 L'API de Gemini est très stricte sur le format des données qu'elle reçoit. Elle attend un objet JSON contenant une liste `contents`, qui contient elle-même une liste `parts`, qui contient enfin l'attribut `text` avec notre prompt. Dans Thunkable, la façon la plus simple de construire ce corps de requête (le *Body*) est d'utiliser un bloc de texte.
 
-1. D'abord, créez une variable `full_prompt` et utilisez un bloc `join` pour y coller le gros bloc de texte RISEN (vu à l'étape 3) avec le texte `Text` du composant `Input_Theme`.
+1. D'abord, créez une `app` variable `full_prompt` et utilisez un bloc `join` pour y coller le gros bloc de texte RISEN (vu à l'étape 3) avec le texte `Text` du composant `Input_Theme`.
 2. Prenez un autre bloc de texte avancé `join` (qui permet de coller plusieurs morceaux de texte ensemble).
 3. Dans la première case, collez exactement ce début de code JSON : `{"contents": [{"parts": [{"text": "`
-4. Dans la deuxième case, glissez votre variable `full_prompt`.
+4. Dans la deuxième case, glissez votre `app` variable `full_prompt`.
 5. Dans la troisième case, fermez le code JSON avec : `"}]}]}`
 6. Assignez le tout au bloc `set Web_API's Body to`.
 
 <img src="/content/images/thunkable_prompt_building.jpg" alt="Construction du prompt" style="display: block; margin: 0 auto;">
 
 **Extraire la réponse JSON :**
-* Lancez l'appel avec le bloc `call Web_API's Post`.
-* L'API nous répond avec un gros bloc de données textuelles complexes.
-* Dans la section verte `then do` du bloc Post, utilisez le bloc `get object from JSON` pour transformer la réponse (`response`) en une variable nommée `citation`.
-* Utilisez les blocs `get property` pour creuser dans cet objet. Le chemin exact pour extraire le texte brut de Gemini est : `candidates[1]` -> `content` -> `parts[1]` -> `text`.
-* **Séparer la citation de l'auteur :** Puisque nous avons forcé Gemini (avec notre N de RISEN) à répondre au format "Citation - Auteur", nous allons couper ce texte en deux !
-  1. Créez une variable `response_list`.
-  2. Assignez-lui le bloc `make list from text` (dans *Lists*), avec le texte extrait de Gemini, et tapez `" - "` dans la case `delimiter`.
-  3. Maintenant que nous avons récupéré la citation, nous pouvons naviguer vers le Screen2.
+* Lancez l'appel avec le bloc `call Gemini's Post`.
+* L'API nous répond avec un gros bloc de données textuelles complexes (`response`).
+* Dans la section `then do`, nous allons isoler le texte qui nous intéresse en imbriquant plusieurs blocs, un peu comme des poupées russes. Nous allons assigner tout ce cheminement à une nouvelle `app` variable `citation`. 
+* Pour bien comprendre ce grand bloc rouge et bleu, lisez-le de droite à gauche (de l'intérieur vers l'extérieur) :
+  1. On transforme le texte brut en objet manipulable : `get object from JSON [response]`.
+  2. On extrait la propriété `candidates`.
+  3. C'est une liste, on prend le premier élément : `in list [...] get # 1`.
+  4. On extrait la propriété `content`.
+  5. On extrait la propriété `parts`.
+  6. C'est aussi une liste, on prend le premier élément : `in list [...] get # 1`.
+  7. On extrait enfin la propriété `text`.
+* **Séparer la citation de l'auteur :** 1. Créez une `app` variable `liste_reponse`.
+  2. Assignez-lui le bloc `make list from text` (dans *Lists*), en utilisant notre `app` variable `citation`, et tapez `" - "` dans la case `delimiter`.
+  3. Maintenant que nos données sont propres et découpées, terminez en glissant le bloc `Navigate to Screen2`.
   
 <img src="/content/images/thunkable_gemini_json_extract.jpg" alt="Appel Web API et parsing JSON" style="display: block; margin: 0 auto;"><br/>
 

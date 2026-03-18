@@ -4,7 +4,7 @@ title: "Tuto Thunkable (2/2) : Rendre son application mobile intelligente avec l
 image: "/content/images/thunkable-gemini-tuto.jpg"
 ref: thunkablegeminip2
 lang: fr
-date:   2026-03-18 00:00:00 -0400
+date:   2026-03-18 06:00:00 -0400
 categories:
   - Tutorials
   - No-Code
@@ -77,7 +77,7 @@ La réponse DOIT suivre ce format strict : 'Citation - Auteur'. Ne dépasse pas 
 
 **Initialisation**
 * À l'ouverture du `Screen1`, videz le champ `Input_Theme`.
-* Lors du clic sur `Btn_Inspire`, nous devons vérifier que le texte (`Text`) du composant `Input_Theme` n'est pas vide avant d'exécuter les étapes suivantes.
+* Lors du clic sur `Btn_Inspire`, nous devons vérifier que le texte `Text` du composant `Input_Theme` n'est pas vide avant d'exécuter les étapes suivantes.
 
 **Construire la requête API :**
 * Créez un composant **Web API** : dans la liste de gauche, déroulez "Advanced", puis cliquez sur le [+] à droite de "Web APIs". C'est lui qui remplacera Firebase pour dialoguer avec les serveurs de Google.
@@ -86,11 +86,11 @@ La réponse DOIT suivre ce format strict : 'Citation - Auteur'. Ne dépasse pas 
   * Configurez l'URL de l'API : définissez le champ "URL" à `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent`.
   * Configurez votre clé d'API : 
     * Définissez le champ "Property" à `key`.
-    * Collez votre clé d'API dans le champ `Value`.
+    * Collez votre clé d'API dans le champ "Value".
     * Cliquez sur [Add].
   * Configurez l'en-tête (header) :
     * Définissez le champ "Property" à `Content-Type`.
-    * Tapez `application/json` dans le champ `Value`.
+    * Tapez `application/json` dans le champ "Value".
     * Cliquez sur [Add].
   * Cliquez sur [Done].
 
@@ -98,7 +98,7 @@ La réponse DOIT suivre ce format strict : 'Citation - Auteur'. Ne dépasse pas 
 
 L'API de Gemini est très stricte sur le format des données qu'elle reçoit. Elle attend un objet JSON contenant une liste `contents`, qui contient elle-même une liste `parts`, qui contient enfin l'attribut `text` avec notre prompt. Dans Thunkable, la façon la plus simple de construire ce corps de requête (le *Body*) est d'utiliser un bloc de texte.
 
-1. D'abord, créez une variable `full_prompt` et utilisez un bloc `join` pour y coller le gros bloc de texte RISEN (vu à l'étape 3) avec le texte (`Text`) du composant `Input_Theme`.
+1. D'abord, créez une variable `full_prompt` et utilisez un bloc `join` pour y coller le gros bloc de texte RISEN (vu à l'étape 3) avec le texte `Text` du composant `Input_Theme`.
 2. Prenez un autre bloc de texte avancé `join` (qui permet de coller plusieurs morceaux de texte ensemble).
 3. Dans la première case, collez exactement ce début de code JSON : `{"contents": [{"parts": [{"text": "`
 4. Dans la deuxième case, glissez votre variable `full_prompt`.
@@ -110,7 +110,7 @@ L'API de Gemini est très stricte sur le format des données qu'elle reçoit. El
 **Extraire la réponse JSON :**
 * Lancez l'appel avec le bloc `call Web_API's Post`.
 * L'API nous répond avec un gros bloc de données textuelles complexes.
-* Dans la section verte `then do` du bloc Post, utilisez le bloc `get object from JSON` pour transformer la réponse (`response`) en un objet manipulable par Thunkable.
+* Dans la section verte `then do` du bloc Post, utilisez le bloc `get object from JSON` pour transformer la réponse (`response`) en une variable nommée `citation`.
 * Utilisez les blocs `get property` pour creuser dans cet objet. Le chemin exact pour extraire le texte brut de Gemini est : `candidates[1]` -> `content` -> `parts[1]` -> `text`.
 * **Séparer la citation de l'auteur :** Puisque nous avons forcé Gemini (avec notre N de RISEN) à répondre au format "Citation - Auteur", nous allons couper ce texte en deux !
   1. Créez une variable `response_list`.

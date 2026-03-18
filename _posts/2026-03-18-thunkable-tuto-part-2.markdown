@@ -4,7 +4,7 @@ title: "Thunkable Tuto (2/2): Make your mobile app smart with the Google Gemini 
 image: "/content/images/thunkable-gemini-tuto.jpg"
 ref: thunkablegeminip2
 lang: en
-date:   2026-03-18 12:00:00 -0400
+date:   2026-03-18 00:00:00 -0400
 categories:
   - Tutorials
   - No-Code

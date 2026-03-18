@@ -139,4 +139,4 @@ No need to compile!
 
 And there you have it! You've created a real mobile app connected to a professional backend. The huge advantage of this architecture is that you can now add, edit, or delete quotes directly from the Firebase console, and your users' app will update instantly, without them having to re-download it.
 
-But why stop there? In **part 2 of this tutorial**, we will replace our Firebase database with the Gemini artificial intelligence API. Our app will no longer just read quotes, it will invent them on demand! Stay tuned.
+But why stop there? In **[part 2 of this tutorial](2026/03/18/thunkable-tuto-part-2.html)**, we will replace our Firebase database with the Gemini artificial intelligence API. Our app will no longer just read quotes, it will invent them on demand! Stay tuned.

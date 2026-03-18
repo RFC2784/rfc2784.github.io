@@ -139,4 +139,4 @@ Pas besoin de compiler !
 
 Et voilà ! Vous avez créé une véritable application mobile connectée à un backend professionnel. L'avantage énorme de cette architecture, c'est que vous pouvez maintenant ajouter, modifier ou supprimer des citations directement depuis la console Firebase, et l'application de vos utilisateurs se mettra à jour instantanément, sans qu'ils n'aient à la retélécharger.
 
-Mais pourquoi s'arrêter en si bon chemin ? Dans **la partie 2 de ce tutoriel**, nous allons remplacer notre base Firebase par l'API de l'intelligence artificielle Gemini. Notre application ne se contentera plus de lire des citations, elle les inventera sur mesure ! Restez à l'écoute.
+Mais pourquoi s'arrêter en si bon chemin ? Dans **[la partie 2 de ce tutoriel](/2026/03/18/thunkable-tuto-partie-2.html)**, nous allons remplacer notre base Firebase par l'API de l'intelligence artificielle Gemini. Notre application ne se contentera plus de lire des citations, elle les inventera sur mesure ! Restez à l'écoute.

@@ -4,7 +4,7 @@ title: "Tuto Thunkable (2/2) : Rendre son application mobile intelligente avec l
 image: "/content/images/thunkable-gemini-tuto.jpg"
 ref: thunkablegeminip2
 lang: fr
-date:   2026-03-18 12:00:00 -0400
+date:   2026-03-18 00:00:00 -0400
 categories:
   - Tutorials
   - No-Code
